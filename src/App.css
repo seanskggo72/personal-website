@@ -7,7 +7,6 @@
 // Style
 ////////////////////////////////////////////////////////////////////////////////*/
 
-/*Center all child componenets*/
 .Main {
   text-align: center;
   min-height: 100vh;
@@ -16,30 +15,55 @@
   align-items: center;
   justify-content: center;
   font-size: calc(30px + 2vmin);
+}
+
+.Name {
   font-family: "Courier New";
   color: rgb(0, 0, 0);
 }
 
-.App-logo {
+.Profile {
   height: 40vmin;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
-.App-link {
-  color: #61dafb;
+.Button {
+  width: 22vw;
+  height: 4vh;
+  margin-bottom: 0.8vmin;
+  border-radius: 5vmin;
+  box-shadow: 0.2vmin 0.2vmin #888888;
+  border: 0.3vmin solid #000000;
+  background-color: rgb(179, 179, 179);
+  color: #ffffff;
+  font-size: calc(8px + 1vmin);
+  font-weight: bold;
 }
+
+/*////////////////////////////////////////////////////////////////////////////////
+// Animations
+////////////////////////////////////////////////////////////////////////////////*/
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .Name {
+    animation: Bounce 2.5s;
   }
 }
 
-@keyframes App-logo-spin {
+@keyframes Spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes Bounce {
+  0% {transform:translateY(20px);}
+  10% {transform: rotate(10deg);}
+  15% {transform: rotate(-10deg);}
+  20% {transform: rotate(5deg);}
+  25% {transform: rotate(-5deg);}
+  100% {transform:translateY(0px);}
 }

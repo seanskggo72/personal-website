@@ -1,11 +1,15 @@
 import logo from './svg/logo.svg';
+import levi from './svg/levi.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="Main">
-      
-      <p>Sean Go</p>
+      <img src={levi} className="Profile" alt="logo" />
+      <p className='Name'>Sean Go</p>
+      <button className='Button'>About Me</button>
+      <button className='Button'>Github</button>
+      <button className='Button'>Projects</button>
     </div>
   );
 }
