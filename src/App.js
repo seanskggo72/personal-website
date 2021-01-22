@@ -1,12 +1,36 @@
-import logo from './svg/logo.svg';
+/////////////////////////////////////////////////////////////////////////////////
+// App.js
+// Main components
+/////////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////////
+// Imports
+/////////////////////////////////////////////////////////////////////////////////
+
 import levi from './svg/levi.svg';
+import React from "react";
+import Typewriter from 'typewriter-effect';
 import './App.css';
 
-function App() {
+/////////////////////////////////////////////////////////////////////////////////
+// Constants
+/////////////////////////////////////////////////////////////////////////////////
+
+const bio = '< UNSW Computer Science Student >'
+
+/////////////////////////////////////////////////////////////////////////////////
+// Functions
+/////////////////////////////////////////////////////////////////////////////////
+
+const App = () => {
   return (
     <div className="Main">
       <img src={levi} className="Profile" alt="logo" />
       <p className='Name'>Sean Go</p>
+      <Typewriter 
+        className='Typewriter' 
+        onInit={(typewriter) => { typewriter.typeString(bio).start() }}
+      />
       <button className='Button'>About Me</button>
       <button className='Button'>Github</button>
       <button className='Button'>Projects</button>
@@ -16,7 +40,7 @@ function App() {
 
 export default App;
 
-{/* <div className="App">
+/* <div className="App">
 <header className="App-header">
   <img src={logo} className="App-logo" alt="logo" />
   <p>
@@ -31,4 +55,4 @@ export default App;
     Learn React
   </a>
 </header>
-</div> */}
+</div> */

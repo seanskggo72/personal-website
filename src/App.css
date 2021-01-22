@@ -20,11 +20,18 @@
 .Name {
   font-family: "Courier New";
   color: rgb(0, 0, 0);
+  margin-bottom: 0;
 }
 
 .Profile {
   height: 40vmin;
   /* pointer-events: none; */
+}
+
+.Typewriter {
+  font-family: "Courier New";
+  margin-bottom: 3vmin;
+  font-size: calc(10px + 2vmin);
 }
 
 .Button {
