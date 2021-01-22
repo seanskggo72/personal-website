@@ -28,15 +28,16 @@
 }
 
 .Button {
-  width: 22vw;
-  height: 4vh;
+  width: 23vmin;
+  height: 4vmin;
   margin-bottom: 0.8vmin;
   border-radius: 5vmin;
   box-shadow: 0.2vmin 0.2vmin #888888;
   border: 0.3vmin solid #000000;
   background-color: rgb(179, 179, 179);
   color: #ffffff;
-  font-size: calc(8px + 1vmin);
+  font-size: calc(11px + 1vmin);
+  font-family: "Courier New";
   font-weight: bold;
 }
 
@@ -48,6 +49,9 @@
   .Name {
     animation: Bounce 2.5s;
   }
+  .Button {
+    animation: infinite Tremor 3s;
+  }
 }
 
 @keyframes Spin {
@@ -57,6 +61,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes Tremor {
+  80% {transform:translateY(1px);}
+  83% {transform:translateY(-1px);}
+  86% {transform:translateY(0.5px);}
+  89% {transform:translateY(-0.5px);}
+  92% {transform:translateY(0px);}
 }
 
 @keyframes Bounce {
