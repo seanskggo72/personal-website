@@ -20,7 +20,7 @@
 .Sub_main {
   flex-direction: column;
   min-height: 100vh;
-  min-width: 80vmin;
+  min-width: 70vmin;
   display: flex;
   align-items: center;
   justify-content: center;
