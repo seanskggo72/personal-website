@@ -1,38 +1,101 @@
-.App {
+/*////////////////////////////////////////////////////////////////////////////////
+// App.css
+// Styles the App.js components
+////////////////////////////////////////////////////////////////////////////////*/
+
+/*////////////////////////////////////////////////////////////////////////////////
+// Style
+////////////////////////////////////////////////////////////////////////////////*/
+
+.Main {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(30px + 2vmin);
 }
 
-.App-link {
-  color: #61dafb;
+.Sub_main {
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 80vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(248, 248, 248);
 }
 
-@keyframes App-logo-spin {
+.Name {
+  font-family: "Courier New";
+  color: rgb(0, 0, 0);
+  margin-bottom: 0;
+}
+
+.Profile {
+  height: 40vmin;
+  /* pointer-events: none; */
+}
+
+.Typewriter {
+  font-family: "Courier New";
+  margin-bottom: 3vmin;
+  font-size: calc(3vmin);
+}
+
+.Button {
+  width: calc(120px + 10vmin);
+  height: calc(25px + 2vmin);
+  margin-bottom: 0.8vmin;
+  border-radius: 5vmin;
+  box-shadow: 0.2vmin 0.2vmin #888888;
+  border: 0.3vmin solid #000000;
+  background-color: rgb(179, 179, 179);
+  color: #ffffff;
+  font-size: calc(4px + 2vmin);
+  font-family: "Courier New";
+  font-weight: 70;
+  text-align: center;
+  /* line-height: 3vh; */
+  text-decoration: none;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////
+// Animations
+////////////////////////////////////////////////////////////////////////////////*/
+
+@media (prefers-reduced-motion: no-preference) {
+  .Name {
+    animation: Bounce 2.5s;
+  }
+  .Button {
+    animation: infinite Tremor 3s;
+  }
+}
+
+@keyframes Spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes Tremor {
+  80% {transform:translateY(1px);}
+  83% {transform:translateY(-1px);}
+  86% {transform:translateY(0.5px);}
+  89% {transform:translateY(-0.5px);}
+  92% {transform:translateY(0px);}
+}
+
+@keyframes Bounce {
+  0% {transform:translateY(20px);}
+  10% {transform: rotate(10deg);}
+  15% {transform: rotate(-10deg);}
+  20% {transform: rotate(5deg);}
+  25% {transform: rotate(-5deg);}
+  100% {transform:translateY(0px);}
 }
