@@ -17,6 +17,16 @@
   font-size: calc(30px + 2vmin);
 }
 
+.Sub_main {
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 80vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(248, 248, 248);
+}
+
 .Name {
   font-family: "Courier New";
   color: rgb(0, 0, 0);
@@ -43,9 +53,12 @@
   border: 0.3vmin solid #000000;
   background-color: rgb(179, 179, 179);
   color: #ffffff;
-  font-size: calc(11px + 1vmin);
+  font-size: calc(4px + 2vmin);
   font-family: "Courier New";
-  font-weight: bold;
+  font-weight: 70;
+  text-align: center;
+  /* line-height: 3vh; */
+  text-decoration: none;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////

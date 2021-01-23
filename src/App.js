@@ -7,8 +7,9 @@
 // Imports
 /////////////////////////////////////////////////////////////////////////////////
 
-import levi from './svg/levi.svg';
 import React from "react";
+import levi from './svg/levi.svg';
+import background from './svg/wallpaper.svg'
 import Typewriter from 'typewriter-effect';
 import './App.css';
 
@@ -24,16 +25,20 @@ const bio = '< UNSW Computer Science Student >'
 
 const App = () => {
   return (
-    <div className="Main">
-      <img src={levi} className="Profile" alt="logo" />
-      <p className='Name'>Sean Go</p>
-      <Typewriter 
-        className='Typewriter' 
-        onInit={(typewriter) => { typewriter.typeString(bio).start() }}
-      />
-      <button className='Button'>About Me</button>
-      <button className='Button'>Github</button>
-      <button className='Button'>Projects</button>
+    <div className="Main" style={{ backgroundImage: `url(${background})` }}>
+      <div className="Sub_main">
+        <img src={levi} className="Profile" alt="logo" />
+        <p className='Name'>Sean Go</p>
+        <Typewriter
+          className='Typewriter'
+          options={{ cursor: '_', delay: 65 }}
+          onInit={(typewriter) => { typewriter.typeString(bio).start() }}
+        />
+        <button className='Button'>About Me</button>
+        <button className='Button'>Github</button>
+        <button className='Button'>Projects</button>
+        {/* <a className='Button' href="https://github.com/seanskggo72" target="_blank">About Me</a> */}
+      </div>
     </div>
   );
 }
