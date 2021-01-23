@@ -17,7 +17,7 @@ import './App.css';
 // Constants
 /////////////////////////////////////////////////////////////////////////////////
 
-const bio = '< UNSW Computer Science Student >'
+const bio = '< Computer Science Student  >'
 
 /////////////////////////////////////////////////////////////////////////////////
 // Functions
@@ -34,7 +34,7 @@ const App = () => {
           options={{ cursor: '_', delay: 65 }}
           onInit={(typewriter) => { typewriter.typeString(bio).start() }}
         />
-        <button className='Button'>About Me</button>
+        <button className='Button'>Resume</button>
         <button className='Button'>Github</button>
         <button className='Button'>Projects</button>
         {/* <a className='Button' href="https://github.com/seanskggo72" target="_blank">About Me</a> */}
