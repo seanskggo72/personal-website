@@ -24,6 +24,10 @@ const bio = '< Computer Science Student  >'
 /////////////////////////////////////////////////////////////////////////////////
 
 const App = () => {
+  const Github = () => {
+    const url = 'https://github.com/seanskggo72';
+    window.open(url, '_blank');
+  }
   return (
     <div className="Main" style={{ backgroundImage: `url(${background})` }}>
       <div className="Sub_main">
@@ -35,7 +39,7 @@ const App = () => {
           onInit={(typewriter) => { typewriter.typeString(bio).start() }}
         />
         <button className='Button'>Resume</button>
-        <button className='Button'>Github</button>
+        <button className='Button' onClick={Github}>Github</button>
         <button className='Button'>Projects</button>
         {/* <a className='Button' href="https://github.com/seanskggo72" target="_blank">About Me</a> */}
       </div>

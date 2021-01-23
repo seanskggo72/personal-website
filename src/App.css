@@ -57,8 +57,12 @@
   font-family: "Courier New";
   font-weight: 70;
   text-align: center;
-  /* line-height: 3vh; */
   text-decoration: none;
+}
+
+.Button:focus {
+  border-color: #ffffff;
+  outline: none !important;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////
