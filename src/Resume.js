@@ -8,20 +8,30 @@
 /////////////////////////////////////////////////////////////////////////////////
 
 import React from "react";
+import { Document, Page, pdfjs } from 'react-pdf'
 import './Resume.css';
+import Resume from './resume.pdf';
 
 /////////////////////////////////////////////////////////////////////////////////
 // Constants
 /////////////////////////////////////////////////////////////////////////////////
+
+const worker = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+const size = window.innerWidth > window.innerHeight ? window.innerHeight : window.innerWidth;
 
 /////////////////////////////////////////////////////////////////////////////////
 // Functions
 /////////////////////////////////////////////////////////////////////////////////
 
 const Resume_template = () => {
+  pdfjs.GlobalWorkerOptions.workerSrc = worker;
   return (
     <div className='Main'>
-      <text>Resume coming soon...</text>
+      <h1 className='Header'>Resume</h1>
+      <p className='Paragraph'>Last updated 24/01/2021</p>
+      <Document file={Resume}>
+        <Page pageNumber={1} width={size - 20}/>
+      </Document>
     </div>
   );
 }
