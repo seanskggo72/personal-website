@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////////////////////////////////
 // App.js
-// Main components
+// Main components (Home component with routing)
 /////////////////////////////////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -31,10 +31,22 @@ const bio = '< Computer Science Student  >'
 /////////////////////////////////////////////////////////////////////////////////
 
 const App = () => {
-  const Github = () => {
-    const url = 'https://github.com/seanskggo72';
-    window.open(url, '_blank');
-  }
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/" children={<Home />} />
+        <Route path="/resume" children={<Resume />} />
+      </Switch>
+    </Router>
+  );
+}
+
+const Github = () => {
+  const url = 'https://github.com/seanskggo72';
+  window.open(url, '_blank');
+}
+
+const Home = () => {
   return (
     <div className="Main" style={{ backgroundImage: `url(${background})` }}>
       <div className="Sub_main">
@@ -45,46 +57,22 @@ const App = () => {
           options={{ cursor: '_', delay: 65 }}
           onInit={(typewriter) => { typewriter.typeString(bio).start() }}
         />
-        <Router>
-          <div className='Div_margin'>
-            <button className='Button' onClick={Github}>Github</button>
-          </div>
-          <div className='Div_margin'>
-            <Link to="/resume" tabindex="-1">
-              <button className='Button'>Resume</button>
-            </Link>
-          </div>
-          <div className='Div_margin'>
-            <Link to="/projects" tabindex="-1">
-              <button className='Button'>Projects</button>
-            </Link>
-          </div>
-          <Switch>
-            <Route path="/resume">
-              <Resume />
-            </Route>
-          </Switch>
-        </Router>
+        <div className='Div_margin'>
+          <button className='Button' onClick={Github}>Github</button>
+        </div>
+        <div className='Div_margin'>
+          <Link to="/resume" tabindex="-1">
+            <button className='Button'>Resume</button>
+          </Link>
+        </div>
+        <div className='Div_margin'>
+          <Link to="/projects" tabindex="-1">
+            <button className='Button'>Projects</button>
+          </Link>
+        </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default App;
-
-/* <div className="App">
-<header className="App-header">
-  <img src={logo} className="App-logo" alt="logo" />
-  <p>
-    Edit <code>src/App.js</code> and save to reload.
-  </p>
-  <a
-    className="App-link"
-    href="https://reactjs.org"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Learn React
-  </a>
-</header>
-</div> */

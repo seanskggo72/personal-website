@@ -20,7 +20,7 @@ import './Resume.css';
 
 const Resume_template = () => {
   return (
-    <div>
+    <div className='Main'>
       <text>RESUME YEET</text>
     </div>
   );
