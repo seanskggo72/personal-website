@@ -11,10 +11,25 @@
   text-align: center;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(30px + 2vmin);
+  background-color: beige;
+}
+
+.Header {
+  font-size: calc(10px + 4vmin);
+  font-family: "Courier New";
+  font-weight: 70;
+  text-align: center;
+  line-height: 20px;
+}
+
+.Paragraph {
+  font-size: calc(10px + 1vmin);
+  font-family: "Courier New";
+  font-weight: 70;
+  text-align: center;
+  line-height: 0px;
 }
   
 /*////////////////////////////////////////////////////////////////////////////////
