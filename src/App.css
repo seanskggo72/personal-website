@@ -20,7 +20,7 @@
 .Sub_main {
   flex-direction: column;
   min-height: 100vh;
-  min-width: 80vmin;
+  min-width: 70vmin;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,12 +53,16 @@
   border: 0.3vmin solid #000000;
   background-color: rgb(179, 179, 179);
   color: #ffffff;
-  font-size: calc(4px + 2vmin);
+  font-size: calc(15px + 1vmin);
   font-family: "Courier New";
   font-weight: 70;
   text-align: center;
-  /* line-height: 3vh; */
   text-decoration: none;
+}
+
+.Button:focus {
+  border-color: #ffffff;
+  outline: none !important;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////
@@ -71,6 +75,12 @@
   }
   .Button {
     animation: infinite Tremor 3s;
+  }
+  .Profile {
+    animation: FadeIn 1s linear;
+  }
+  .Main {
+    animation: FadeIn 1s linear;
   }
 }
 
@@ -98,4 +108,9 @@
   20% {transform: rotate(5deg);}
   25% {transform: rotate(-5deg);}
   100% {transform:translateY(0px);}
+}
+
+@keyframes FadeIn {
+  from {opacity: 0;}   
+  to {opacity: 1;}
 }
