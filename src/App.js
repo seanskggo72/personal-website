@@ -8,9 +8,16 @@
 /////////////////////////////////////////////////////////////////////////////////
 
 import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import levi from './svg/levi.svg';
 import background from './svg/wallpaper.svg'
 import Typewriter from 'typewriter-effect';
+import Resume from './Resume';
 import './App.css';
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -38,10 +45,26 @@ const App = () => {
           options={{ cursor: '_', delay: 65 }}
           onInit={(typewriter) => { typewriter.typeString(bio).start() }}
         />
-        <button className='Button'>Resume</button>
-        <button className='Button' onClick={Github}>Github</button>
-        <button className='Button'>Projects</button>
-        {/* <a className='Button' href="https://github.com/seanskggo72" target="_blank">About Me</a> */}
+        <Router>
+          <div className='Div_margin'>
+            <button className='Button' onClick={Github}>Github</button>
+          </div>
+          <div className='Div_margin'>
+            <Link to="/resume" tabindex="-1">
+              <button className='Button'>Resume</button>
+            </Link>
+          </div>
+          <div className='Div_margin'>
+            <Link to="/projects" tabindex="-1">
+              <button className='Button'>Projects</button>
+            </Link>
+          </div>
+          <Switch>
+            <Route path="/resume">
+              <Resume />
+            </Route>
+          </Switch>
+        </Router>
       </div>
     </div>
   );
