@@ -18,6 +18,7 @@ import levi from './svg/levi.svg';
 import background from './svg/wallpaper.svg'
 import Typewriter from 'typewriter-effect';
 import Resume from './Resume';
+import Projects from './Projects';
 import './App.css';
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -36,6 +37,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" children={<Home />} />
         <Route path="/resume" children={<Resume />} />
+        <Route path="/projects" children={<Projects />} />
       </Switch>
     </Router>
   );
@@ -58,12 +60,12 @@ const Home = () => {
           onInit={(typewriter) => { typewriter.typeString(bio).start() }}
         />
         <div className='Div_margin'>
-          <button className='Button' onClick={Github}>Github</button>
-        </div>
-        <div className='Div_margin'>
           <Link to="/resume" tabindex="-1">
             <button className='Button'>Resume</button>
           </Link>
+        </div>
+        <div className='Div_margin'>
+          <button className='Button' onClick={Github}>Github</button>
         </div>
         <div className='Div_margin'>
           <Link to="/projects" tabindex="-1">
