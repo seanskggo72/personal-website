@@ -19,7 +19,7 @@ const Notfound = () => {
     <div className='Main'>
       <text className='Header'>404 Error</text>
       <hr />
-      <text className='Paragraph'>The current URL was not found. Please ensure the URL was correctly typed.</text>
+      <text className='Paragraph'>The current URL was not found.</text>
     </div>
   );
 }
