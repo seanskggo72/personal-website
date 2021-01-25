@@ -66,7 +66,7 @@
   background-color: #252525;
   border-color: #252525;
   color: #ffffff;
-  font-size: calc(5px + 1vmin);
+  font-size: calc(10px + 0.5vmin);
   font-family: "Montserrat-Bold";
   text-align: center;
 }
