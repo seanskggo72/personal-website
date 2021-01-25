@@ -19,6 +19,7 @@ import background from './svg/wallpaper.svg'
 import Typewriter from 'typewriter-effect';
 import Resume from './Resume';
 import Projects from './Projects';
+import Notfound from './Notfound';
 import './App.css';
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -38,6 +39,7 @@ const App = () => {
         <Route exact path="/" children={<Home />} />
         <Route path="/resume" children={<Resume />} />
         <Route path="/projects" children={<Projects />} />
+        <Route children={<Notfound />} />
       </Switch>
     </Router>
   );
@@ -50,7 +52,7 @@ const Github = () => {
 
 const Home = () => {
   return (
-    <div className="Main" style={{ backgroundImage: `url(${background})` }}>
+    <div className="Main_app" style={{ backgroundImage: `url(${background})` }}>
       <div className="Sub_main">
         <img src={levi} className="Profile" alt="logo" />
         <p className='Name'>Sean Go</p>
