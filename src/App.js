@@ -26,7 +26,7 @@ import './App.css';
 // Constants
 /////////////////////////////////////////////////////////////////////////////////
 
-const bio = '< Software_Engineer />'
+const bio = '~$ Software_Engineer && Student '
 
 /////////////////////////////////////////////////////////////////////////////////
 // Functions
@@ -63,15 +63,15 @@ const Home = () => {
         />
         <div className='Div_margin'>
           <Link to="/resume" tabindex="-1">
-            <button className='Button'>Resume</button>
+            <button className='Button'>RESUME</button>
           </Link>
         </div>
         <div className='Div_margin'>
-          <button className='Button' onClick={Github}>Github</button>
+          <button className='Button' onClick={Github}>GITHUB</button>
         </div>
         <div className='Div_margin'>
           <Link to="/projects" tabindex="-1">
-            <button className='Button'>Projects</button>
+            <button className='Button'>PROJECTS</button>
           </Link>
         </div>
       </div>
