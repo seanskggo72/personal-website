@@ -8,12 +8,12 @@
 ////////////////////////////////////////////////////////////////////////////////*/
 
 @font-face {
-  src: url(fonts/Montserrat-ExtraLight.ttf);
+  src: url(../fonts/Montserrat-ExtraLight.ttf);
   font-family: Montserrat-ExtraLight;
 }
 
 @font-face {
-  src: url(fonts/Montserrat-Bold.ttf);
+  src: url(../fonts/Montserrat-Bold.ttf);
   font-family: Montserrat-Bold;
 }
 

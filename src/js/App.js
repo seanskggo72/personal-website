@@ -14,13 +14,13 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import levi from './svg/levi.svg';
-import background from './svg/wallpaper.svg'
+import levi from '../svg/levi.svg';
+import background from '../svg/wallpaper.svg'
 import Typewriter from 'typewriter-effect';
 import Resume from './Resume';
 import Projects from './Projects';
 import Notfound from './Notfound';
-import './App.css';
+import '../css/App.css';
 
 /////////////////////////////////////////////////////////////////////////////////
 // Constants
