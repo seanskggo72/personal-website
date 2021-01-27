@@ -27,7 +27,6 @@ const Resume_template = () => {
   pdfjs.GlobalWorkerOptions.workerSrc = worker;
   return (
     <div className='Main'>
-      <h1 className='Header'>Resume</h1>
       <p className='Paragraph'>Last updated 24/01/2021</p>
       <Document file={Resume}>
         <Page pageNumber={1} width={size - 20}/>
