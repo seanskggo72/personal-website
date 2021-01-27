@@ -20,9 +20,9 @@ const Animation = (props) => {
   const { inViewport, enterCount } = props;
   //Fade in only the first time we enter the viewport
   if (inViewport && enterCount === 1) {
-    return { WebkitTransition: 'opacity 1.2s ease-in-out' };
+    return { transition: 'opacity 2s ease-in-out' };
   } else if (!inViewport && enterCount < 1) {
-    return { WebkitTransition: 'none', opacity: '0' };
+    return { transition: 'none', opacity: '0' };
   } else {
     return {};
   }
@@ -61,11 +61,14 @@ const Block2 = handleViewport(Bule);
 
 const Project_template = () => {
   return (
-    <div className='Main'>
-      <div>
-        <text>YEET!!</text>
+    <div className='Project_main'>
+      <div className='Header'>
+        <h>Portfolio</h>
+        <text className='Paragraph'>This portfolio was made by sean</text>
       </div>
       <Block1 />
+      <Block2 />
+      <Block2 />
       <Block2 />
     </div>
   );

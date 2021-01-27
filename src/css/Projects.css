@@ -7,7 +7,7 @@
 // Style
 ////////////////////////////////////////////////////////////////////////////////*/
 
-.Main {
+.Project_main {
   text-align: center;
   min-height: 100vh;
   display: flex;
@@ -15,6 +15,18 @@
   align-items: center;
   justify-content: center;
   font-size: calc(30px + 2vmin);
+  background-color: #F5F5F5;
+}
+
+.Header {
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  font-family: "Montserrat-Bold";
 }
 
 /*////////////////////////////////////////////////////////////////////////////////
@@ -22,7 +34,7 @@
 ////////////////////////////////////////////////////////////////////////////////*/
 
 @media (prefers-reduced-motion: no-preference) {
-  .Main {
+  .Project_main {
     animation: FadeIn 1s;
   }
 }
