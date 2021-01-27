@@ -7,6 +7,7 @@
 // Imports
 /////////////////////////////////////////////////////////////////////////////////
 
+import 'intersection-observer';
 import React from "react";
 import '../css/Projects.css';
 
