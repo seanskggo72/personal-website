@@ -16,21 +16,11 @@
   background-color: #F5F5F5;
 }
 
-.Header {
-  font-size: calc(10px + 4vmin);
-  font-family: "Montserrat-Bold";
-  font-weight: 70;
-  text-align: center;
-  line-height: 10px;
-  color: #252525;
-}
-
 .Paragraph {
   font-size: calc(10px + 1vmin);
   font-family: "Montserrat-ExtraLight";
   font-weight: 70;
   text-align: center;
-  margin-top: 0px;
   color: #252525;
 }
   
