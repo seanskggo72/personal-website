@@ -13,18 +13,14 @@ import React from "react";
 import '../css/Projects.css';
 
 /////////////////////////////////////////////////////////////////////////////////
-// Constants
-/////////////////////////////////////////////////////////////////////////////////
-
-/////////////////////////////////////////////////////////////////////////////////
 // Functions
 /////////////////////////////////////////////////////////////////////////////////
 
-const animation = (props) => {
+const Animation = (props) => {
   const { inViewport, enterCount } = props;
   //Fade in only the first time we enter the viewport
   if (inViewport && enterCount === 1) {
-    return { WebkitTransition: 'opacity 0.75s ease-in-out' };
+    return { WebkitTransition: 'opacity 1.2s ease-in-out' };
   } else if (!inViewport && enterCount < 1) {
     return { WebkitTransition: 'none', opacity: '0' };
   } else {
@@ -32,28 +28,36 @@ const animation = (props) => {
   }
 }
 
-const Block = (props) => {
+const TicTacToe = (props) => {
   const { forwardedRef } = props;
   return (
-    <div ref={forwardedRef} style={animation(props)}>
+    <div ref={forwardedRef} style={Animation(props)}>
       <h3>Hi YEET!!!</h3>
       <div style={{ width: '400px', height: '300px', background: 'blue' }} />
     </div>
   );
 };
 
-const Block2 = (props) => {
+const Bule = (props) => {
   const { forwardedRef } = props;
   return (
-    <div ref={forwardedRef} style={animation(props)}>
+    <div ref={forwardedRef} style={Animation(props)}>
       <h3>Hi YEET!!!</h3>
       <div style={{ width: '400px', height: '300px', background: 'red' }} />
     </div>
   );
 };
 
-const ViewportBlock = handleViewport(Block);
-const ViewportBlock2 = handleViewport(Block2);
+/////////////////////////////////////////////////////////////////////////////////
+// Constants
+/////////////////////////////////////////////////////////////////////////////////
+
+const Block1 = handleViewport(TicTacToe);
+const Block2 = handleViewport(Bule);
+
+/////////////////////////////////////////////////////////////////////////////////
+// Exports
+/////////////////////////////////////////////////////////////////////////////////
 
 const Project_template = () => {
   return (
@@ -61,15 +65,9 @@ const Project_template = () => {
       <div>
         <text>YEET!!</text>
       </div>
-      <ViewportBlock />
-      <ViewportBlock />
-      <ViewportBlock />
-      <ViewportBlock2 />
+      <Block1 />
+      <Block2 />
     </div>
-
-    // <div className='Main'>
-    //   <text>Projects coming soon...</text>
-    // </div>
   );
 }
 

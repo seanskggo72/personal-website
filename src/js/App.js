@@ -71,7 +71,7 @@ const Home = () => {
         </div>
         <div className='Div_margin'>
           <Link to="/projects" tabindex="-1">
-            <button className='Button'>PROJECTS</button>
+            <button className='Button'>PORTFOLIO</button>
           </Link>
         </div>
       </div>

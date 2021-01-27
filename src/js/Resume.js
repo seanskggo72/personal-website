@@ -28,6 +28,7 @@ const Resume_template = () => {
   return (
     <div className='Main'>
       <p className='Paragraph'>Last updated 24/01/2021</p>
+      <p className='Info'>Please refresh if this resume does not fit your screen</p>
       <Document file={Resume}>
         <Page pageNumber={1} width={size - 20}/>
       </Document>
