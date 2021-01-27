@@ -9,8 +9,8 @@
 
 import React from "react";
 import { Document, Page, pdfjs } from 'react-pdf'
-import './Resume.css';
-import Resume from './resume.pdf';
+import '../css/Resume.css';
+import Resume from '../pdf/resume.pdf';
 
 /////////////////////////////////////////////////////////////////////////////////
 // Constants
