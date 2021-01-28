@@ -47,6 +47,7 @@
 
 .Button:focus {
   background-color: rgb(87, 87, 87);
+  outline: none !important;
 }
 
 .Title {
