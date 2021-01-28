@@ -47,7 +47,7 @@ const App = () => {
 
 const Github = () => {
   const url = 'https://github.com/seanskggo72';
-  window.open(url, '_blank');
+  window.open(url, "_self");
 }
 
 const Home = () => {
