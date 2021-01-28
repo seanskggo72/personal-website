@@ -24,10 +24,24 @@ const Animation = (props) => {
 
 const TicTacToe = () => {
   return (
-    <div className='Main_slot'>
-      <div className='Sub_slot'>
+    <div className='FlexBox Main_slot'>
+      <div className='FlexBox Sub_slot'>
         <text>sdfasdf</text>
         <text>afgafafafafaf</text>
+      </div>
+    </div>
+  );
+};
+
+const Slot_1 = (props) => {
+  const { forwardedRef } = props;
+  return (
+    <div ref={forwardedRef} className={Animation(props)}>
+      <div className='FlexBox Main_slot'>
+        <div className='FlexBox Sub_slot'>
+          <Block1 />
+          <Block1 />
+        </div>
       </div>
     </div>
   );
@@ -37,7 +51,6 @@ const Bule = (props) => {
   const { forwardedRef } = props;
   return (
     <div ref={forwardedRef} className={Animation(props)}>
-      <h3>Hi YEET!!!</h3>
       <div style={{ width: '400px', height: '300px', background: 'red' }} />
     </div>
   );
@@ -47,6 +60,9 @@ const Bule = (props) => {
 // Constants
 /////////////////////////////////////////////////////////////////////////////////
 
+// Slots
+const Slot1 = handleViewport(Slot_1);
+// Blocks
 const Block1 = handleViewport(Bule);
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -58,16 +74,13 @@ const Project_template = () => {
     <div className='FlexBox Main'>
       <div className='FlexBox Banner'>
         <h className='Title Header'>Portfolio</h>
-        <text className='Text Portfolio_paragraph'>This portfolio showcases 
+        <text className='Text Portfolio_paragraph'>This portfolio showcases
         some of the projects that I undertook</text>
-        <text className='Text Portfolio_paragraph'>as well as the date, 
+        <text className='Text Portfolio_paragraph'>as well as the date,
         descriptions and technologies used.</text>
       </div>
-      <TicTacToe />
-      <Block1 />
-      <Block1 />
-      <Block1 />
-      <Block1 />
+      <Slot1 />
+      <Slot1 />
     </div>
   );
 }
