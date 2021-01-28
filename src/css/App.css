@@ -174,12 +174,12 @@
 }
 
 .Image {
-  width: 25vmin;
+  height: 25vmax;
 }
 
 .Image2 {
-  width: 50vmin;
-  margin-top: 2vmin;
+  height: 25vmax;
+  margin-bottom: 2vmin;
 }
 
 .Component_text {
@@ -198,7 +198,7 @@
 // Animations and Media
 ////////////////////////////////////////////////////////////////////////////////*/
 
-@media only screen and (max-width: 900px) { 
+@media only screen and (max-width: 550px) { 
   .Sub_slot {
     width: 90vw;
     height: 70vh;
