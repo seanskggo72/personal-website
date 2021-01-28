@@ -13,6 +13,7 @@ import React from "react";
 import '../css/App.css';
 import TicTacToe from '../assets/TicTacToe.png';
 import Vscode from '../assets/vscode.png'; 
+import Bule from '../assets/bule.png';
 
 /////////////////////////////////////////////////////////////////////////////////
 // Functions
@@ -43,15 +44,15 @@ const Slot_1 = (props) => {
               Created with React Native.
             </text>
             <div>
-              <button className='Main_button Button Button_styling' 
+              <button className='Button Button_styling' 
                 onClick={() => Redirector('https://play.google.com/store/apps/details?id=dev.quikk.tictactoeai')}>
                   GOOGLE PLAY
               </button>
-              <button className='Main_button Button Button_styling' 
+              <button className='Button Button_styling' 
                 onClick={() => Redirector('https://github.com/seanskggo72/tic-tac-toe-app')}>
                   GITHUB
               </button>
-              <button className='Main_button Button Button_styling' 
+              <button className='Button Button_styling' 
                 onClick={() => Redirector('https://github.com/seanskggo72/tic-tac-toe-AI')}>
                   PROTOTYPE
               </button>
@@ -78,11 +79,11 @@ const Slot_2 = (props) => {
               Created with yo.
             </text>
             <div>
-              <button className='Main_button Button Button_styling' 
+              <button className='Button Button_styling' 
                 onClick={() => Redirector('https://marketplace.visualstudio.com/items?itemName=seanskggo.bule-syntax-highlighting')}>
                   MARKETPLACE
               </button>
-              <button className='Main_button Button Button_styling' 
+              <button className='Button Button_styling' 
                 onClick={() => Redirector('https://github.com/seanskggo72/vscode-bule-syntax-highlighting')}>
                   GITHUB
               </button>
@@ -107,6 +108,37 @@ const Banner_1 = (props) => {
   );
 };
 
+const Slot_3 = (props) => {
+  const { forwardedRef } = props;
+  return (
+    <div ref={forwardedRef} className={Animation(props, 'Header')}>
+      <div className='FlexBox Main_slot'>
+        <div className='FlexBox Sub_slot'>
+          <div className='Left_sub_slot'>
+            <img src={Bule} className='Image3' alt='Tic Tac Toe App' />
+          </div>
+          <div className='Right_sub_slot Column'>
+            <text className='Title Header'>Efficacy of Bule as a SAT language</text>
+            <text className='Text Header Component_text'>
+              Emerging SAT Language
+            </text>
+            <div>
+              <button className='Button Button_styling' 
+                onClick={() => Redirector('https://github.com/AbdallahS/pspace-encodings')}>
+                  GITHUB
+              </button>
+              <button className='Button Button_styling' 
+                onClick={() => Redirector('https://github.com/vale1410/bule')}>
+                  BULE
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 /////////////////////////////////////////////////////////////////////////////////
 // Constants
 /////////////////////////////////////////////////////////////////////////////////
@@ -115,6 +147,7 @@ const Banner_1 = (props) => {
 const Slot1 = handleViewport(Slot_1);
 const Slot2 = handleViewport(Slot_2);
 const Banner = handleViewport(Banner_1);
+const Slot3 = handleViewport(Slot_3);
 
 /////////////////////////////////////////////////////////////////////////////////
 // Exports
@@ -133,7 +166,7 @@ const Project_template = () => {
       <Slot1 />
       <Slot2 />
       <Banner />
-      <Slot1 />
+      <Slot3 />
     </div>
   );
 }
