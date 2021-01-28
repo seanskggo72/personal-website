@@ -10,7 +10,7 @@
 import 'intersection-observer';
 import handleViewport from 'react-in-viewport';
 import React from "react";
-import '../css/Projects.css';
+import '../css/App.css';
 
 /////////////////////////////////////////////////////////////////////////////////
 // Functions
@@ -61,10 +61,10 @@ const Block2 = handleViewport(Bule);
 
 const Project_template = () => {
   return (
-    <div className='Project_main'>
-      <div className='Header'>
+    <div className='FlexBox Main'>
+      <div className='FlexBox Header'>
         <h>Portfolio</h>
-        <text className='Paragraph'>This portfolio was made by sean</text>
+        <text className='Text Paragraph'>This portfolio was made by sean</text>
       </div>
       <Block1 />
       <Block2 />

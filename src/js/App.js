@@ -52,8 +52,8 @@ const Github = () => {
 
 const Home = () => {
   return (
-    <div className="Main_app" style={{ backgroundImage: `url(${background})` }}>
-      <div className="Sub_main">
+    <div className="FlexBox Main" style={{ backgroundImage: `url(${background})` }}>
+      <div className="FlexBox Main Sub_main">
         <img src={levi} className="Profile" alt="logo" />
         <p className='Name'>Sean Go</p>
         <Typewriter
@@ -63,15 +63,15 @@ const Home = () => {
         />
         <div className='Div_margin'>
           <Link to="/resume" tabindex="-1">
-            <button className='Button'>RESUME</button>
+            <button className='Main_button Button'>RESUME</button>
           </Link>
         </div>
         <div className='Div_margin'>
-          <button className='Button' onClick={Github}>GITHUB</button>
+          <button className='Main_button Button' onClick={Github}>GITHUB</button>
         </div>
         <div className='Div_margin'>
           <Link to="/projects" tabindex="-1">
-            <button className='Button'>PORTFOLIO</button>
+            <button className='Main_button Button'>PORTFOLIO</button>
           </Link>
         </div>
       </div>
