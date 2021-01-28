@@ -170,7 +170,7 @@
   width: calc(60px + 10vmin);
   height: calc(30px + 2vmin);
   font-size: calc(5px + 1vmin);
-  margin-left: 1vmin;
+  margin-left: 1.5vmin;
   margin-bottom: -1vmin;
   margin-top: -1vmin;
 }
@@ -207,10 +207,8 @@
 @media (prefers-reduced-motion: no-preference) {
   .Main {animation: FadeIn 1s;}
   .Button:hover {animation: HoverEffect 0.5s forwards;}
-  .Header {animation: SlideIn 2s;}
-  .Portfolio_paragraph {animation: SlideInDelay 4s;}
-  .First_component {animation: SlideInDelayExtra 6s;}
-  .After_components {animation: SlideIn 2s;}
+  .Header {animation: SlideIn 1.5s;}
+  .Portfolio_paragraph {animation: SlideInDelay 3s;}
 }
 
 @keyframes FadeIn {
