@@ -44,15 +44,15 @@ const Slot_1 = (props) => {
               Created with React Native.
             </text>
             <div>
-              <button className='Main_button Button Button_styling' 
+              <button className='Button Button_styling' 
                 onClick={() => Redirector('https://play.google.com/store/apps/details?id=dev.quikk.tictactoeai')}>
                   GOOGLE PLAY
               </button>
-              <button className='Main_button Button Button_styling' 
+              <button className='Button Button_styling' 
                 onClick={() => Redirector('https://github.com/seanskggo72/tic-tac-toe-app')}>
                   GITHUB
               </button>
-              <button className='Main_button Button Button_styling' 
+              <button className='Button Button_styling' 
                 onClick={() => Redirector('https://github.com/seanskggo72/tic-tac-toe-AI')}>
                   PROTOTYPE
               </button>
@@ -79,11 +79,11 @@ const Slot_2 = (props) => {
               Created with yo.
             </text>
             <div>
-              <button className='Main_button Button Button_styling' 
+              <button className='Button Button_styling' 
                 onClick={() => Redirector('https://marketplace.visualstudio.com/items?itemName=seanskggo.bule-syntax-highlighting')}>
                   MARKETPLACE
               </button>
-              <button className='Main_button Button Button_styling' 
+              <button className='Button Button_styling' 
                 onClick={() => Redirector('https://github.com/seanskggo72/vscode-bule-syntax-highlighting')}>
                   GITHUB
               </button>
@@ -120,16 +120,16 @@ const Slot_3 = (props) => {
           <div className='Right_sub_slot Column'>
             <text className='Title Header'>Efficacy of Bule as a SAT language</text>
             <text className='Text Header Component_text'>
-              Created with yo.
+              Emerging SAT Language
             </text>
             <div>
-              <button className='Main_button Button Button_styling' 
-                onClick={() => Redirector('https://marketplace.visualstudio.com/items?itemName=seanskggo.bule-syntax-highlighting')}>
-                  MARKETPLACE
-              </button>
-              <button className='Main_button Button Button_styling' 
-                onClick={() => Redirector('https://github.com/seanskggo72/vscode-bule-syntax-highlighting')}>
+              <button className='Button Button_styling' 
+                onClick={() => Redirector('https://github.com/AbdallahS/pspace-encodings')}>
                   GITHUB
+              </button>
+              <button className='Button Button_styling' 
+                onClick={() => Redirector('https://github.com/vale1410/bule')}>
+                  BULE
               </button>
             </div>
           </div>
