@@ -16,42 +16,35 @@ import '../css/App.css';
 // Functions
 /////////////////////////////////////////////////////////////////////////////////
 
-const Animation = (props) => {
+const Animation = (props, string) => {
   const { inViewport, enterCount } = props;
-  if (inViewport && enterCount === 1) return "Header";
-  else return '';
+  if (inViewport && enterCount === 1) return string;
 }
-
-const TicTacToe = () => {
-  return (
-    <div className='FlexBox Main_slot'>
-      <div className='FlexBox Sub_slot'>
-        <text>sdfasdf</text>
-        <text>afgafafafafaf</text>
-      </div>
-    </div>
-  );
-};
 
 const Slot_1 = (props) => {
   const { forwardedRef } = props;
   return (
-    <div ref={forwardedRef} className={Animation(props)}>
+    <div ref={forwardedRef} className={Animation(props, 'Header')}>
       <div className='FlexBox Main_slot'>
         <div className='FlexBox Sub_slot'>
-          <Block1 />
-          <Block1 />
+          <text>asdfasdf</text>
+          <text>asdfASDFASDF</text>
         </div>
       </div>
     </div>
   );
 };
 
-const Bule = (props) => {
+const Slot_2 = (props) => {
   const { forwardedRef } = props;
   return (
-    <div ref={forwardedRef} className={Animation(props)}>
-      <div style={{ width: '400px', height: '300px', background: 'red' }} />
+    <div ref={forwardedRef} className={Animation(props, 'Header')}>
+      <div className='FlexBox Main_slot'>
+        <div className='FlexBox Sub_slot'>
+          <text>asdfasdf</text>
+          <text>asdfASDFASDF</text>
+        </div>
+      </div>
     </div>
   );
 };
@@ -62,8 +55,7 @@ const Bule = (props) => {
 
 // Slots
 const Slot1 = handleViewport(Slot_1);
-// Blocks
-const Block1 = handleViewport(Bule);
+const Slot2 = handleViewport(Slot_2);
 
 /////////////////////////////////////////////////////////////////////////////////
 // Exports
@@ -80,7 +72,9 @@ const Project_template = () => {
         descriptions and technologies used.</text>
       </div>
       <Slot1 />
-      <Slot1 />
+      <Slot2 />
+      <Slot2 />
+      <Slot2 />
     </div>
   );
 }

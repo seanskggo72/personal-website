@@ -126,6 +126,11 @@
   margin-bottom: 10px;
 }
 
+.Header_without {
+  margin-bottom: 10px;
+}
+
+
 .Portfolio_paragraph {
   font-size: calc(10px + 1vmin);
 }
@@ -142,13 +147,22 @@
   background-color: #7e74aa;
 }
 
-@media only screen and (max-width: 900px) { 
-  .Sub_slot {
-    width: 90vw;
-    height: 70vh;
-    flex-direction: column;
-    background-color: #ac3d3d;
-  }
+.Project_component {
+  height: calc(200px + 30vh);
+  width: calc(250px + 30vw);
+  background-color: #0532ff;
+}
+
+.Project_component_without {
+  height: calc(200px + 30vh);
+  width: calc(250px + 30vw);
+  background-color: #0532ff;
+}
+
+.Project_component2 {
+  height: calc(200px + 30vh);
+  width: calc(250px + 30vw);
+  background-color: #ff0505;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////
@@ -162,6 +176,15 @@
 /*////////////////////////////////////////////////////////////////////////////////
 // Animations and Media
 ////////////////////////////////////////////////////////////////////////////////*/
+
+@media only screen and (max-width: 900px) { 
+  .Sub_slot {
+    width: 90vw;
+    height: 70vh;
+    flex-direction: column;
+    background-color: #ac3d3d;
+  }
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .Main {animation: FadeIn 1s;}
