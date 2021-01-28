@@ -38,7 +38,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" children={<Home />} />
         <Route path="/resume" children={<Resume />} />
-        <Route path="/projects" children={<Projects />} />
+        <Route path="/portfolio" children={<Projects />} />
         <Route children={<Notfound />} />
       </Switch>
     </Router>
@@ -47,32 +47,32 @@ const App = () => {
 
 const Github = () => {
   const url = 'https://github.com/seanskggo72';
-  window.open(url, '_blank');
+  window.open(url);
 }
 
 const Home = () => {
   return (
-    <div className="Main_app" style={{ backgroundImage: `url(${background})` }}>
-      <div className="Sub_main">
+    <div className="FlexBox Main" style={{ backgroundImage: `url(${background})` }}>
+      <div className="FlexBox Main Sub_main">
         <img src={levi} className="Profile" alt="logo" />
-        <p className='Name'>Sean Go</p>
+        <p className='Title Name'>Sean Go</p>
         <Typewriter
           className='Typewriter'
           options={{ cursor: '_', delay: 65 }}
           onInit={(typewriter) => { typewriter.typeString(bio).start() }}
         />
         <div className='Div_margin'>
-          <Link to="/resume" tabindex="-1">
-            <button className='Button'>RESUME</button>
+          <Link to="/portfolio" tabindex="-1" className='Main_button'>
+            <button className='Main_button Button'>PORTFOLIO</button>
           </Link>
         </div>
         <div className='Div_margin'>
-          <button className='Button' onClick={Github}>GITHUB</button>
+          <Link to="/resume" tabindex="-1" className='Main_button'>
+            <button className='Main_button Button'>RESUME</button>
+          </Link>
         </div>
         <div className='Div_margin'>
-          <Link to="/projects" tabindex="-1">
-            <button className='Button'>PROJECTS</button>
-          </Link>
+          <button className='Main_button Button' onClick={Github}>GITHUB</button>
         </div>
       </div>
     </div>

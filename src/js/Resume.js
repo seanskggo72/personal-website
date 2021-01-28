@@ -9,7 +9,7 @@
 
 import React from "react";
 import { Document, Page, pdfjs } from 'react-pdf'
-import '../css/Resume.css';
+import '../css/App.css';
 import Resume from '../pdf/resume.pdf';
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -26,8 +26,9 @@ const size = window.innerWidth > window.innerHeight ? window.innerHeight : windo
 const Resume_template = () => {
   pdfjs.GlobalWorkerOptions.workerSrc = worker;
   return (
-    <div className='Main'>
-      <p className='Paragraph'>Last updated 24/01/2021</p>
+    <div className='FlexBox Main'>
+      <p className='Text Paragraph'>Last updated 24/01/2021</p>
+      <p className='Text Info'>Please refresh if this resume does not fit your screen</p>
       <Document file={Resume}>
         <Page pageNumber={1} width={size - 20}/>
       </Document>

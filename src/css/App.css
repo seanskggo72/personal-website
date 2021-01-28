@@ -18,38 +18,65 @@
 }
 
 /*////////////////////////////////////////////////////////////////////////////////
-// Style
+// Main Styles
 ////////////////////////////////////////////////////////////////////////////////*/
 
-.Main_app {
-  text-align: center;
-  min-height: 100vh;
+.FlexBox {
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: calc(30px + 2vmin);
 }
 
-.Sub_main {
-  flex-direction: column;
+.Main {
   min-height: 100vh;
+  font-size: calc(30px + 2vmin);
+  background-color: #F5F5F5;
+  color: #252525;
+}
+
+.Button {
+  background-color: #252525;
+  border-color: #252525;
+  color: #ffffff;
+  font-family: "Montserrat-Bold";
+  text-align: center;
+  border-radius: 7px;
+}
+
+.Button:focus {
+  background-color: rgb(87, 87, 87);
+  outline: none !important;
+}
+
+.Title {
+  font-family: "Montserrat-Bold";
+  text-align: center;
+  color: #252525;
+}
+
+.Text {
+  font-family: "Montserrat-ExtraLight";
+  text-align: center;
+  color: #252525;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////
+// App.js styles
+////////////////////////////////////////////////////////////////////////////////*/
+
+.Sub_main {
   min-width: 70vmin;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: rgb(250, 250, 250);
 }
 
 .Name {
-  font-family: "Montserrat-Bold";
-  color: #252525;
   margin-bottom: 0;
 }
 
 .Profile {
   width: 70vmin;
-  /* pointer-events: none; */
 }
 
 .Typewriter {
@@ -60,35 +87,131 @@
   color: #252525;
 }
 
-.Button {
-  width: calc(70px + 10vmin);
-  height: calc(30px + 2vmin);
-  background-color: #252525;
-  border-color: #252525;
-  color: #ffffff;
-  font-size: calc(10px + 0.5vmin);
-  font-family: "Montserrat-Bold";
-  text-align: center;
-}
-
-.Button:focus {
-  background-color: rgb(87, 87, 87);
-  border-color: rgb(87, 87, 87);
-  border-width: 3px; 
-  outline: none !important;
-}
-
 .Div_margin {
   margin: -1vmin;
 }
 
+.Main_button {
+  width: calc(70px + 10vmin);
+  height: calc(30px + 2vmin);
+  font-size: calc(10px + 0.5vmin);
+}
+
 /*////////////////////////////////////////////////////////////////////////////////
-// Animations
+// Resume.js styles
 ////////////////////////////////////////////////////////////////////////////////*/
 
+.Paragraph {
+  font-size: calc(10px + 1vmin);
+  margin-bottom: 0;
+}
+
+.Info {
+  font-size: calc(8px + 1vmin);
+  margin-top: 0;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////
+// Project.js styles
+////////////////////////////////////////////////////////////////////////////////*/
+
+.Banner {
+  width: 100vw;
+  height: 20vh;
+  background-color: #ffffff;
+  font-family: "Montserrat-Bold";
+}
+
+.Header {
+  display: flex;
+  font-size: calc(5px + 5.5vmin);
+  margin-bottom: 10px;
+}
+
+.Portfolio_paragraph {
+  font-size: calc(1px + 2.5vmin);
+}
+
+.Main_slot {
+  height: 81vh;
+  width: 100vw;
+}
+
+.Sub_slot {
+  width: 95vw;
+  height: 70vh;
+  flex-direction: row;
+  background-color: #ffffff;
+}
+
+.Left_sub_slot {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 30vw;
+  height: 27vh;
+}
+
+.Right_sub_slot {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  height: 30vh;
+}
+
+.Column {
+  flex-direction: column;
+}
+
+.Button_styling {
+  width: calc(60px + 10vmin);
+  height: calc(30px + 2vmin);
+  font-size: calc(5px + 1vmin);
+  margin-left: 2vmin;
+}
+
+.Image {
+  width: 25vmin;
+}
+
+.Image2 {
+  width: 50vmin;
+  margin-top: 2vmin;
+}
+
+.Component_text {
+  font-size: calc(1px + 2.5vmin);
+}
+
+/*////////////////////////////////////////////////////////////////////////////////
+// Notfound.js styles
+////////////////////////////////////////////////////////////////////////////////*/
+
+.Error {
+  font-size: calc(20px + 2vmin);
+}
+
+/*////////////////////////////////////////////////////////////////////////////////
+// Animations and Media
+////////////////////////////////////////////////////////////////////////////////*/
+
+@media only screen and (max-width: 900px) { 
+  .Sub_slot {
+    width: 90vw;
+    height: 70vh;
+    flex-direction: column;
+    background-color: #ffffff;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
-  .Main_app {animation: FadeIn 1s;}
+  .Main {animation: FadeIn 1s;}
   .Button:hover {animation: HoverEffect 0.5s forwards;}
+  .Header {animation: SlideIn 1.5s;}
+  .Portfolio_paragraph {animation: SlideInDelay 3s;}
 }
 
 @keyframes FadeIn {
@@ -99,4 +222,22 @@
 @keyframes HoverEffect {
   from {transform: scale(1);}
   to {transform: scale(1.01);}
+}
+
+@keyframes SlideIn {
+  from {opacity: 0;}
+  50% {opacity: 0; transform: translateY(20px)}
+  to {transform: translateY(0px);}
+}
+
+@keyframes SlideInDelay {
+  from {opacity: 0;}
+  50% {opacity: 0; transform: translateY(30px)}
+  to {transform: translateY(0px);}
+}
+
+@keyframes SlideInDelayExtra {
+  from {opacity: 0;}
+  60% {opacity: 0; transform: translateY(30px)}
+  to {transform: translateY(0px);}
 }

@@ -16,10 +16,9 @@ import React from "react";
 
 const Notfound = () => {
   return (
-    <div className='Main'>
-      <text className='Header'>404 Error</text>
-      <hr />
-      <text className='Paragraph'>The current URL was not found.</text>
+    <div className='FlexBox Main'>
+      <text className='Title Error'>404 Error</text>
+      <text className='Text Paragraph'>The current URL was not found.</text>
     </div>
   );
 }
