@@ -168,6 +168,8 @@
   .Button:hover {animation: HoverEffect 0.5s forwards;}
   .Header {animation: SlideIn 2s;}
   .Portfolio_paragraph {animation: SlideInDelay 4s;}
+  .First_component {animation: SlideInDelayExtra 6s;}
+  .After_components {animation: SlideIn 1.5s;}
 }
 
 @keyframes FadeIn {
@@ -189,5 +191,11 @@
 @keyframes SlideInDelay {
   from {opacity: 0;}
   50% {opacity: 0; transform: translateY(30px)}
+  to {transform: translateY(0px);}
+}
+
+@keyframes SlideInDelayExtra {
+  from {opacity: 0;}
+  60% {opacity: 0; transform: translateY(30px)}
   to {transform: translateY(0px);}
 }

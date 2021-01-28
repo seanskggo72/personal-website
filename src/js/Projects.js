@@ -24,25 +24,13 @@ const Animation = (props, string) => {
 const Slot_1 = (props) => {
   const { forwardedRef } = props;
   return (
-    <div ref={forwardedRef} className={Animation(props, 'Header')}>
+    <div ref={forwardedRef} className={Animation(props, 'After_components')}>
       <div className='FlexBox Main_slot'>
         <div className='FlexBox Sub_slot'>
-          <text>asdfasdf</text>
-          <text>asdfASDFASDF</text>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const Slot_2 = (props) => {
-  const { forwardedRef } = props;
-  return (
-    <div ref={forwardedRef} className={Animation(props, 'Header')}>
-      <div className='FlexBox Main_slot'>
-        <div className='FlexBox Sub_slot'>
-          <text>asdfasdf</text>
-          <text>asdfASDFASDF</text>
+          <text>IMAGE</text>
+          <div>
+            <text>DESCRIPTION</text>
+          </div>
         </div>
       </div>
     </div>
@@ -55,7 +43,6 @@ const Slot_2 = (props) => {
 
 // Slots
 const Slot1 = handleViewport(Slot_1);
-const Slot2 = handleViewport(Slot_2);
 
 /////////////////////////////////////////////////////////////////////////////////
 // Exports
@@ -71,10 +58,17 @@ const Project_template = () => {
         <text className='Text Portfolio_paragraph'>as well as the date,
         descriptions and technologies used.</text>
       </div>
+      <div className='First_component'>
+        <div className='FlexBox Main_slot'>
+          <div className='FlexBox Sub_slot'>
+            <text>IMAGE</text>
+            <div>
+              <text>DESCRIPTION</text>
+            </div>
+          </div>
+        </div>
+      </div>
       <Slot1 />
-      <Slot2 />
-      <Slot2 />
-      <Slot2 />
     </div>
   );
 }
