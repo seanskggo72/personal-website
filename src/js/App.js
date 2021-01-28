@@ -38,7 +38,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" children={<Home />} />
         <Route path="/resume" children={<Resume />} />
-        <Route path="/projects" children={<Projects />} />
+        <Route path="/portfolio" children={<Projects />} />
         <Route children={<Notfound />} />
       </Switch>
     </Router>
@@ -62,7 +62,7 @@ const Home = () => {
           onInit={(typewriter) => { typewriter.typeString(bio).start() }}
         />
         <div className='Div_margin'>
-          <Link to="/projects" tabindex="-1" className='Main_button'>
+          <Link to="/portfolio" tabindex="-1" className='Main_button'>
             <button className='Main_button Button'>PORTFOLIO</button>
           </Link>
         </div>
