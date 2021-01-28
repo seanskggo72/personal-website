@@ -150,7 +150,7 @@
   align-items: center;
   justify-content: center;
   width: 30vw;
-  height: 30vh;
+  height: 27vh;
 }
 
 .Right_sub_slot {
@@ -170,13 +170,16 @@
   width: calc(60px + 10vmin);
   height: calc(30px + 2vmin);
   font-size: calc(5px + 1vmin);
-  margin-left: 1.5vmin;
-  margin-bottom: -1vmin;
-  margin-top: -1vmin;
+  margin-left: 2vmin;
 }
 
 .Image {
   width: 25vmin;
+}
+
+.Image2 {
+  width: 50vmin;
+  margin-top: 2vmin;
 }
 
 .Component_text {

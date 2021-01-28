@@ -12,6 +12,7 @@ import handleViewport from 'react-in-viewport';
 import React from "react";
 import '../css/App.css';
 import TicTacToe from '../assets/TicTacToe.png';
+import Vscode from '../assets/vscode.png'; 
 
 /////////////////////////////////////////////////////////////////////////////////
 // Functions
@@ -62,6 +63,37 @@ const Slot_1 = (props) => {
   );
 };
 
+const Slot_2 = (props) => {
+  const { forwardedRef } = props;
+  return (
+    <div ref={forwardedRef} className={Animation(props, 'Header')}>
+      <div className='FlexBox Main_slot'>
+        <div className='FlexBox Sub_slot'>
+          <div className='Left_sub_slot'>
+            <img src={Vscode} className='Image2' alt='Tic Tac Toe App' />
+          </div>
+          <div className='Right_sub_slot Column'>
+            <text className='Title Header'>Bule Syntax Highlighter</text>
+            <text className='Text Header Component_text'>
+              Created with yo.
+            </text>
+            <div>
+              <button className='Main_button Button Button_styling' 
+                onClick={() => Redirector('https://marketplace.visualstudio.com/items?itemName=seanskggo.bule-syntax-highlighting')}>
+                  MARKETPLACE
+              </button>
+              <button className='Main_button Button Button_styling' 
+                onClick={() => Redirector('https://github.com/seanskggo72/vscode-bule-syntax-highlighting')}>
+                  GITHUB
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Banner_1 = (props) => {
   const { forwardedRef } = props;
   return (
@@ -81,6 +113,7 @@ const Banner_1 = (props) => {
 
 // Slots
 const Slot1 = handleViewport(Slot_1);
+const Slot2 = handleViewport(Slot_2);
 const Banner = handleViewport(Banner_1);
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -98,7 +131,7 @@ const Project_template = () => {
         descriptions and technologies used.</text>
       </div>
       <Slot1 />
-      <Slot1 />
+      <Slot2 />
       <Banner />
       <Slot1 />
     </div>
