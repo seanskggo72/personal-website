@@ -28,11 +28,13 @@ const Slot_1 = (props) => {
     <div ref={forwardedRef} className={Animation(props, 'Header')}>
       <div className='FlexBox Main_slot'>
         <div className='FlexBox Sub_slot'>
-          <div className='Sub_sub_slot'>
+          <div className='Left_sub_slot'>
             <img src={TicTacToe} className='Image' alt='Tic Tac Toe App' />
           </div>
-          <div className='Sub_sub_slot'>
-            <text>DESCRIPTION</text>
+          <div className='Right_sub_slot Column'>
+            <text className='Title Header'>Portfolio</text>
+            <text className='Text Header'>The following highlights my
+              research contributions at UNSW.</text>
           </div>
         </div>
       </div>
