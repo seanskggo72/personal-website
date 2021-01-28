@@ -141,7 +141,20 @@
   width: 90vw;
   height: 70vh;
   flex-direction: row;
-  background-color: #7e74aa;
+}
+
+.Sub_sub_slot {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 45vw;
+  height: 70vh;
+  background-color: #ffffff;
+}
+
+.Image {
+  width: 25vmin;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////
@@ -161,7 +174,7 @@
     width: 90vw;
     height: 70vh;
     flex-direction: column;
-    background-color: #ac3d3d;
+    background-color: #ffffff;
   }
 }
 

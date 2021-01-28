@@ -11,6 +11,7 @@ import 'intersection-observer';
 import handleViewport from 'react-in-viewport';
 import React from "react";
 import '../css/App.css';
+import TicTacToe from '../assets/TicTacToe.png';
 
 /////////////////////////////////////////////////////////////////////////////////
 // Functions
@@ -27,8 +28,10 @@ const Slot_1 = (props) => {
     <div ref={forwardedRef} className={Animation(props, 'Header')}>
       <div className='FlexBox Main_slot'>
         <div className='FlexBox Sub_slot'>
-          <text>IMAGE</text>
-          <div>
+          <div className='Sub_sub_slot'>
+            <img src={TicTacToe} className='Image' alt='Tic Tac Toe App' />
+          </div>
+          <div className='Sub_sub_slot'>
             <text>DESCRIPTION</text>
           </div>
         </div>
