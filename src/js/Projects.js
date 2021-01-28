@@ -22,6 +22,11 @@ const Animation = (props, string) => {
   if (inViewport && enterCount === 1) return string;
 }
 
+const Redirector = (url_feed) => {
+  const url = url_feed;
+  window.open(url);
+}
+
 const Slot_1 = (props) => {
   const { forwardedRef } = props;
   return (
@@ -32,9 +37,24 @@ const Slot_1 = (props) => {
             <img src={TicTacToe} className='Image' alt='Tic Tac Toe App' />
           </div>
           <div className='Right_sub_slot Column'>
-            <text className='Title Header'>Portfolio</text>
-            <text className='Text Header'>The following highlights my
-              research contributions at UNSW.</text>
+            <text className='Title Header'>Tic Tac Toe AI</text>
+            <text className='Text Header Component_text'>
+              Created with React Native.
+            </text>
+            <div>
+              <button className='Main_button Button Button_styling' 
+                onClick={() => Redirector('https://play.google.com/store/apps/details?id=dev.quikk.tictactoeai')}>
+                  GOOGLE PLAY
+              </button>
+              <button className='Main_button Button Button_styling' 
+                onClick={() => Redirector('https://github.com/seanskggo72/tic-tac-toe-app')}>
+                  GITHUB
+              </button>
+              <button className='Main_button Button Button_styling' 
+                onClick={() => Redirector('https://github.com/seanskggo72/tic-tac-toe-AI')}>
+                  PROTOTYPE
+              </button>
+            </div>
           </div>
         </div>
       </div>

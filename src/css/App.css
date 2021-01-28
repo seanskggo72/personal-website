@@ -151,7 +151,6 @@
   justify-content: center;
   width: 30vw;
   height: 30vh;
-  background-color: #ffffff;
 }
 
 .Right_sub_slot {
@@ -161,15 +160,27 @@
   justify-content: center;
   width: 50vw;
   height: 30vh;
-  background-color: #ffffff;
 }
 
 .Column {
   flex-direction: column;
 }
 
+.Button_styling {
+  width: calc(60px + 10vmin);
+  height: calc(30px + 2vmin);
+  font-size: calc(5px + 1vmin);
+  margin-left: 1vmin;
+  margin-bottom: -1vmin;
+  margin-top: -1vmin;
+}
+
 .Image {
   width: 25vmin;
+}
+
+.Component_text {
+  font-size: calc(1px + 2.5vmin);
 }
 
 /*////////////////////////////////////////////////////////////////////////////////

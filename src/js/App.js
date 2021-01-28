@@ -47,7 +47,7 @@ const App = () => {
 
 const Github = () => {
   const url = 'https://github.com/seanskggo72';
-  window.open(url, "_self");
+  window.open(url);
 }
 
 const Home = () => {
@@ -62,17 +62,17 @@ const Home = () => {
           onInit={(typewriter) => { typewriter.typeString(bio).start() }}
         />
         <div className='Div_margin'>
+          <Link to="/projects" tabindex="-1" className='Main_button'>
+            <button className='Main_button Button'>PORTFOLIO</button>
+          </Link>
+        </div>
+        <div className='Div_margin'>
           <Link to="/resume" tabindex="-1" className='Main_button'>
             <button className='Main_button Button'>RESUME</button>
           </Link>
         </div>
         <div className='Div_margin'>
           <button className='Main_button Button' onClick={Github}>GITHUB</button>
-        </div>
-        <div className='Div_margin'>
-          <Link to="/projects" tabindex="-1" className='Main_button'>
-            <button className='Main_button Button'>PORTFOLIO</button>
-          </Link>
         </div>
       </div>
     </div>
