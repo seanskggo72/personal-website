@@ -62,9 +62,12 @@ const Block2 = handleViewport(Bule);
 const Project_template = () => {
   return (
     <div className='FlexBox Main'>
-      <div className='FlexBox Header'>
-        <h>Portfolio</h>
-        <text className='Text Paragraph'>This portfolio was made by sean</text>
+      <div className='FlexBox Banner'>
+        <h className='Title Header'>Portfolio</h>
+        <text className='Text Portfolio_paragraph'>This portfolio showcases 
+        some of the projects that I undertook</text>
+        <text className='Text Portfolio_paragraph'>as well as the date, 
+        descriptions and technologies used.</text>
       </div>
       <Block1 />
       <Block2 />

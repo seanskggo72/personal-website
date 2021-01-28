@@ -55,7 +55,7 @@ const Home = () => {
     <div className="FlexBox Main" style={{ backgroundImage: `url(${background})` }}>
       <div className="FlexBox Main Sub_main">
         <img src={levi} className="Profile" alt="logo" />
-        <p className='Name'>Sean Go</p>
+        <p className='Title Name'>Sean Go</p>
         <Typewriter
           className='Typewriter'
           options={{ cursor: '_', delay: 65 }}

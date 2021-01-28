@@ -72,8 +72,6 @@
 }
 
 .Name {
-  font-family: "Montserrat-Bold";
-  color: #252525;
   margin-bottom: 0;
 }
 
@@ -117,11 +115,19 @@
 // Project.js styles
 ////////////////////////////////////////////////////////////////////////////////*/
 
-.Header {
+.Banner {
   width: 100vw;
   height: 20vh;
   background-color: #ffffff;
   font-family: "Montserrat-Bold";
+}
+
+.Header {
+  margin-bottom: 10px;
+}
+
+.Portfolio_paragraph {
+  font-size: calc(10px + 1vmin);
 }
 
 /*////////////////////////////////////////////////////////////////////////////////
