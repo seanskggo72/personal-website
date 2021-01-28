@@ -126,11 +126,6 @@
   margin-bottom: 10px;
 }
 
-.Header_without {
-  margin-bottom: 10px;
-}
-
-
 .Portfolio_paragraph {
   font-size: calc(10px + 1vmin);
 }
@@ -145,24 +140,6 @@
   height: 70vh;
   flex-direction: row;
   background-color: #7e74aa;
-}
-
-.Project_component {
-  height: calc(200px + 30vh);
-  width: calc(250px + 30vw);
-  background-color: #0532ff;
-}
-
-.Project_component_without {
-  height: calc(200px + 30vh);
-  width: calc(250px + 30vw);
-  background-color: #0532ff;
-}
-
-.Project_component2 {
-  height: calc(200px + 30vh);
-  width: calc(250px + 30vw);
-  background-color: #ff0505;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////
