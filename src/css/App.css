@@ -130,6 +130,39 @@
   font-size: calc(10px + 1vmin);
 }
 
+.Main_slot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  width: 100vw;
+}
+
+.Sub_slot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 40vw;
+  height: 40vh;
+  border-color: #252525;
+  border-width: 10px;
+  background-color: #7e74aa;
+}
+
+@media only screen and (max-width: 900px) { 
+  .Sub_slot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 40vh;
+    background-color: #ac3d3d;
+  }
+}
+
 /*////////////////////////////////////////////////////////////////////////////////
 // Notfound.js styles
 ////////////////////////////////////////////////////////////////////////////////*/

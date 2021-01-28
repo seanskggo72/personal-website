@@ -18,22 +18,17 @@ import '../css/App.css';
 
 const Animation = (props) => {
   const { inViewport, enterCount } = props;
-  //Fade in only the first time we enter the viewport
-  if (inViewport && enterCount === 1) {
-    return { transition: 'opacity 2s ease-in-out' };
-  } else if (!inViewport && enterCount < 1) {
-    return { transition: 'none', opacity: '0' };
-  } else {
-    return {};
-  }
+  if (inViewport && enterCount === 1) return "Header";
+  else return '';
 }
 
-const TicTacToe = (props) => {
-  const { forwardedRef } = props;
+const TicTacToe = () => {
   return (
-    <div ref={forwardedRef} style={Animation(props)}>
-      <h3>Hi YEET!!!</h3>
-      <div style={{ width: '400px', height: '300px', background: 'blue' }} />
+    <div className='Main_slot'>
+      <div className='Sub_slot'>
+        <text>sdfasdf</text>
+        <text>afgafafafafaf</text>
+      </div>
     </div>
   );
 };
@@ -41,7 +36,7 @@ const TicTacToe = (props) => {
 const Bule = (props) => {
   const { forwardedRef } = props;
   return (
-    <div ref={forwardedRef} style={Animation(props)}>
+    <div ref={forwardedRef} className={Animation(props)}>
       <h3>Hi YEET!!!</h3>
       <div style={{ width: '400px', height: '300px', background: 'red' }} />
     </div>
@@ -52,8 +47,7 @@ const Bule = (props) => {
 // Constants
 /////////////////////////////////////////////////////////////////////////////////
 
-const Block1 = handleViewport(TicTacToe);
-const Block2 = handleViewport(Bule);
+const Block1 = handleViewport(Bule);
 
 /////////////////////////////////////////////////////////////////////////////////
 // Exports
@@ -69,10 +63,11 @@ const Project_template = () => {
         <text className='Text Portfolio_paragraph'>as well as the date, 
         descriptions and technologies used.</text>
       </div>
+      <TicTacToe />
       <Block1 />
-      <Block2 />
-      <Block2 />
-      <Block2 />
+      <Block1 />
+      <Block1 />
+      <Block1 />
     </div>
   );
 }
