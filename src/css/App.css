@@ -123,11 +123,13 @@
 }
 
 .Header {
+  display: flex;
+  font-size: calc(5px + 5.5vmin);
   margin-bottom: 10px;
 }
 
 .Portfolio_paragraph {
-  font-size: calc(10px + 1vmin);
+  font-size: calc(1px + 2.5vmin);
 }
 
 .Main_slot {
@@ -169,7 +171,7 @@
   .Header {animation: SlideIn 2s;}
   .Portfolio_paragraph {animation: SlideInDelay 4s;}
   .First_component {animation: SlideInDelayExtra 6s;}
-  .After_components {animation: SlideIn 1.5s;}
+  .After_components {animation: SlideIn 2s;}
 }
 
 @keyframes FadeIn {
