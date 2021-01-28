@@ -133,7 +133,7 @@
 }
 
 .Main_slot {
-  height: 81vh;
+  max-height: 81vh;
   width: 100vw;
 }
 
@@ -174,12 +174,16 @@
 }
 
 .Image {
-  height: 25vmax;
+  height: 20vmax;
 }
 
 .Image2 {
-  height: 25vmax;
+  height: 20vmax;
   margin-bottom: 2vmin;
+}
+
+.Image3 {
+  height: 15vmax;
 }
 
 .Component_text {
