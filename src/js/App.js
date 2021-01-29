@@ -14,7 +14,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import levi from '../svg/levi.svg';
+import sean from '../svg/sean.svg';
 import background from '../svg/wallpaper.svg'
 import Typewriter from 'typewriter-effect';
 import Resume from './Resume';
@@ -54,7 +54,7 @@ const Home = () => {
   return (
     <div className="FlexBox Main" style={{ backgroundImage: `url(${background})` }}>
       <div className="FlexBox Main Sub_main">
-        <img src={levi} className="Profile" alt="logo" />
+        <img src={sean} className="Profile" alt="logo" />
         <p className='Title Name'>Sean Go</p>
         <Typewriter
           className='Typewriter'
