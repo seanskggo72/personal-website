@@ -79,7 +79,7 @@ const Slot_2 = (props) => {
             <text className='Title Sub_Header'>Bule Syntax Highlighter</text>
             <text className='Text Header Component_text Paragraph_container'>
               Simple VScode syntax highlighter for Bule, a SAT programming language.
-              Created with VScode API and CLI tools.
+              Created with VS Code API and CLI tools.
             </text>
             <div>
               <button className='Button Button_styling'
