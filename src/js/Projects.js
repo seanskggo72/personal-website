@@ -40,7 +40,7 @@ const Slot_1 = (props) => {
             <img src={TicTacToe} className='Image' alt='Tic Tac Toe App' />
           </div>
           <div className='Right_sub_slot Column'>
-            <text className='Title Header'>Tic Tac Toe AI</text>
+            <text className='Title Sub_Header'>Tic Tac Toe AI</text>
             <text className='Text Header Component_text'>
               Created with React Native.
             </text>
@@ -75,7 +75,7 @@ const Slot_2 = (props) => {
             <img src={Vscode} className='Image2' alt='Tic Tac Toe App' />
           </div>
           <div className='Right_sub_slot Column'>
-            <text className='Title Header'>Bule Syntax Highlighter</text>
+            <text className='Title Sub_Header'>Bule Syntax Highlighter</text>
             <text className='Text Header Component_text'>
               Created with yo.
             </text>
@@ -103,7 +103,7 @@ const Banner_1 = (props) => {
       <div className='FlexBox Banner'>
         <div className='FlexBox Sub_banner'>
           <h className='Title Header'>Research Contributions</h>
-          <text className='Text Portfolio_paragraph'>The following highlights my
+          <text className='Text Component_text'>The following highlights my
         research contributions at UNSW.</text>
         </div>
       </div>
@@ -121,7 +121,7 @@ const Slot_3 = (props) => {
             <img src={Bule} className='Image3' alt='Tic Tac Toe App' />
           </div>
           <div className='Right_sub_slot Column'>
-            <text className='Title Header'>Efficacy of Bule as a SAT language</text>
+            <text className='Title Sub_Header'>Efficacy of Bule as a SAT language</text>
             <text className='Text Header Component_text'>
               Emerging SAT Language
             </text>
@@ -162,7 +162,7 @@ const Project_template = () => {
       <div className='FlexBox Banner'>
         <div className='FlexBox Sub_banner'>
           <h className='Title Header'>Portfolio</h>
-          <text className='Text Portfolio_paragraph'>This portfolio showcases
+          <text className='Text Component_text'>This portfolio showcases
           some of the projects that I undertook as well as the date,
         descriptions and technologies used.</text>
         </div>

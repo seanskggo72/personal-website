@@ -140,8 +140,10 @@
   margin-bottom: 10px;
 }
 
-.Portfolio_paragraph {
-  font-size: calc(1px + 2.5vmin);
+.Sub_Header {
+  font-size: calc(5px + 4.5vmin);
+  margin-bottom: 10px;
+  width: 40vw;
 }
 
 .Main_slot {
@@ -201,7 +203,7 @@
 }
 
 .Component_text {
-  font-size: calc(1px + 2.5vmin);
+  font-size: calc(5px + 2vmin);
 }
 
 /*////////////////////////////////////////////////////////////////////////////////
