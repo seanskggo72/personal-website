@@ -125,8 +125,8 @@ const Slot_3 = (props) => {
           <div className='Right_sub_slot Column'>
             <text className='Title Sub_Header'>Efficacy of Bule as a SAT language</text>
             <text className='Text Header Component_text Paragraph_container'>
-              Ongoing research on Bule and its time complexity and compactness of 
-              boolean expressions. 
+              Ongoing research on Bule and its efficiency of representing
+              boolean expressions, factoring in time complexity and compactness.
             </text>
             <div>
               <button className='Button Button_styling'
