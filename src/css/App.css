@@ -119,6 +119,12 @@
   width: 100vw;
   height: 20vh;
   background-color: #ffffff;
+}
+
+.Sub_banner {
+  width: 85vmin;
+  height: 20vh;
+  background-color: #ffffff;
   font-family: "Montserrat-Bold";
 }
 
