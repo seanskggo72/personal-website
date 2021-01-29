@@ -128,6 +128,12 @@
   margin-bottom: 10px;
 }
 
+.Header_without {
+  display: flex;
+  font-size: calc(5px + 5.5vmin);
+  margin-bottom: 10px;
+}
+
 .Portfolio_paragraph {
   font-size: calc(1px + 2.5vmin);
 }
@@ -170,7 +176,9 @@
   width: calc(60px + 10vmin);
   height: calc(30px + 2vmin);
   font-size: calc(5px + 1vmin);
-  margin-left: 2vmin;
+  margin-left: 1vmin;
+  margin-right: 1vmin;
+  margin-bottom: -1vmin;
 }
 
 .Image {

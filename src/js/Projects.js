@@ -22,6 +22,7 @@ import Bule from '../assets/bule.png';
 const Animation = (props, string) => {
   const { inViewport, enterCount } = props;
   if (inViewport && enterCount === 1) return string;
+  else return string + '_without';
 }
 
 const Redirector = (url_feed) => {
