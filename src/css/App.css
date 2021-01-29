@@ -143,7 +143,7 @@
 .Sub_Header {
   font-size: calc(5px + 4.5vmin);
   margin-bottom: 10px;
-  width: 40vw;
+  width: 45vw;
 }
 
 .Main_slot {
@@ -206,6 +206,10 @@
   font-size: calc(5px + 2vmin);
 }
 
+.Paragraph_container {
+  width: 40vw;
+}
+
 /*////////////////////////////////////////////////////////////////////////////////
 // Notfound.js styles
 ////////////////////////////////////////////////////////////////////////////////*/
@@ -231,7 +235,7 @@
   .Main {animation: FadeIn 1s;}
   .Button:hover {animation: HoverEffect 0.5s forwards;}
   .Header {animation: SlideIn 1.5s;}
-  .Portfolio_paragraph {animation: SlideInDelay 3s;}
+  .Component_text {animation: SlideInDelay 3s;}
 }
 
 @keyframes FadeIn {

@@ -41,8 +41,9 @@ const Slot_1 = (props) => {
           </div>
           <div className='Right_sub_slot Column'>
             <text className='Title Sub_Header'>Tic Tac Toe AI</text>
-            <text className='Text Header Component_text'>
-              Created with React Native.
+            <text className='Text Header Component_text Paragraph_container'>
+              Simple Tic Tac Toe app created with React Native and Expo from scratch using
+              functional components and hooks.
             </text>
             <div>
               <button className='Button Button_styling'
@@ -76,8 +77,9 @@ const Slot_2 = (props) => {
           </div>
           <div className='Right_sub_slot Column'>
             <text className='Title Sub_Header'>Bule Syntax Highlighter</text>
-            <text className='Text Header Component_text'>
-              Created with yo.
+            <text className='Text Header Component_text Paragraph_container'>
+              Simple VScode syntax highlighter for Bule, a SAT programming language.
+              Created with VScode API and CLI tools.
             </text>
             <div>
               <button className='Button Button_styling'
@@ -122,8 +124,9 @@ const Slot_3 = (props) => {
           </div>
           <div className='Right_sub_slot Column'>
             <text className='Title Sub_Header'>Efficacy of Bule as a SAT language</text>
-            <text className='Text Header Component_text'>
-              Emerging SAT Language
+            <text className='Text Header Component_text Paragraph_container'>
+              Ongoing research on Bule and its time complexity and compactness of 
+              boolean expressions. 
             </text>
             <div>
               <button className='Button Button_styling'
