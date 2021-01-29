@@ -119,6 +119,12 @@
   width: 100vw;
   height: 20vh;
   background-color: #ffffff;
+}
+
+.Sub_banner {
+  width: 85vmin;
+  height: 20vh;
+  background-color: #ffffff;
   font-family: "Montserrat-Bold";
 }
 
@@ -134,8 +140,10 @@
   margin-bottom: 10px;
 }
 
-.Portfolio_paragraph {
-  font-size: calc(1px + 2.5vmin);
+.Sub_Header {
+  font-size: calc(5px + 4.5vmin);
+  margin-bottom: 10px;
+  width: 45vw;
 }
 
 .Main_slot {
@@ -195,7 +203,11 @@
 }
 
 .Component_text {
-  font-size: calc(1px + 2.5vmin);
+  font-size: calc(5px + 2vmin);
+}
+
+.Paragraph_container {
+  width: 40vw;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////
@@ -223,7 +235,7 @@
   .Main {animation: FadeIn 1s;}
   .Button:hover {animation: HoverEffect 0.5s forwards;}
   .Header {animation: SlideIn 1.5s;}
-  .Portfolio_paragraph {animation: SlideInDelay 3s;}
+  .Component_text {animation: SlideInDelay 3s;}
 }
 
 @keyframes FadeIn {
