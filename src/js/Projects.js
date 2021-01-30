@@ -166,8 +166,8 @@ const Project_template = () => {
         <div className='FlexBox Sub_banner'>
           <h className='Title Header'>Portfolio</h>
           <text className='Text Component_text'>This portfolio showcases
-          some of the projects that I undertook as well as the date,
-        descriptions and technologies used.</text>
+          some of the projects that I undertook as well as the descriptions and 
+          technologies used.</text>
         </div>
       </div>
       <Slot1 />
