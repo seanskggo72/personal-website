@@ -14,7 +14,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import sean from '../svg/sean.svg';
+import sean from '../svg/sean.png';
 import background from '../svg/wallpaper.svg'
 import Typewriter from 'typewriter-effect';
 import Resume from './Resume';
