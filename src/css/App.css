@@ -201,6 +201,10 @@
   height: 15vmax;
 }
 
+.Image4 {
+  height: 25vmax;
+}
+
 .Component_text {
   font-size: calc(5px + 2vmin);
 }
