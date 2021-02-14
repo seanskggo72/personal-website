@@ -153,10 +153,10 @@ const Slot_4 = (props) => {
       <div className='FlexBox Main_slot'>
         <div className='FlexBox Sub_slot'>
           <div className='Left_sub_slot'>
-            <img src={Churn} className='Image4' alt='Churn Predictor Website' />
+            <img src={Churn} className='Image3' alt='Churn Predictor Website' />
           </div>
           <div className='Right_sub_slot Column'>
-            <text className='Title Sub_Header'>Customer Churn Predictor</text>
+            <text className='Title Sub_Header'>Bank Churn Predictor</text>
             <text className='Text Header Component_text Paragraph_container'>
               Predicts likelihood of bank attrition. Uses multiple regression
               as machine learning model. Created with React, Flask, Heroku and Firebase. 
