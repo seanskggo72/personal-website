@@ -159,7 +159,7 @@ const Slot_4 = (props) => {
             <text className='Title Sub_Header'>Bank Churn Predictor</text>
             <text className='Text Header Component_text Paragraph_container'>
               Predicts likelihood of bank attrition. Uses multiple regression
-              as machine learning model. Created with React, Flask, Heroku and Firebase. 
+              as machine learning model. Utilised React, Flask, Axios, Heroku and Firebase. 
               REST-based application.
             </text>
             <div>
