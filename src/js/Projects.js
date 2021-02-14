@@ -164,12 +164,12 @@ const Slot_4 = (props) => {
             </text>
             <div>
               <button className='Button Button_styling'
-                onClick={() => Redirector('https://github.com/AbdallahS/pspace-encodings')}>
-                GITHUB
+                onClick={() => Redirector('https://bank-churn-predictor.web.app/')}>
+                WEBSITE
               </button>
               <button className='Button Button_styling'
-                onClick={() => Redirector('https://github.com/vale1410/bule')}>
-                BULE
+                onClick={() => Redirector('https://github.com/seanskggo72/Bank-Churn-Predictor')}>
+                GITHUB
               </button>
             </div>
           </div>
