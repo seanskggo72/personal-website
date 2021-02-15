@@ -32,7 +32,7 @@
 .Main {
   min-height: 100vh;
   font-size: calc(30px + 2vmin);
-  background-color: #F5F5F5;
+  background-color: #ffffff;
   color: #252525;
 }
 
@@ -118,13 +118,13 @@
 .Banner {
   width: 100vw;
   height: 20vh;
-  background-color: #ffffff;
+  background-color: #F5F5F5;
 }
 
 .Sub_banner {
   width: 85vmin;
   height: 20vh;
-  background-color: #ffffff;
+  background-color: #F5F5F5;
   font-family: "Montserrat-Bold";
 }
 
