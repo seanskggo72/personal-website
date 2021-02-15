@@ -164,7 +164,7 @@ const Slot_4 = (props) => {
             </text>
             <div>
               <button className='Button Button_styling'
-                onClick={() => Redirector('https://bank-churn-predictor.web.app/')}>
+                onClick={() => Redirector('https://futurespace-predict.web.app/')}>
                 WEBSITE
               </button>
               <button className='Button Button_styling'
