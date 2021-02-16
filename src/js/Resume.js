@@ -27,7 +27,7 @@ const Resume_template = () => {
   pdfjs.GlobalWorkerOptions.workerSrc = worker;
   return (
     <div className='FlexBox Main'>
-      <p className='Text Paragraph'>Last updated 30/01/2021</p>
+      <p className='Text Paragraph'>Last updated 15/02/2021</p>
       <p className='Text Info'>Please refresh if this resume does not fit your screen</p>
       <Document file={Resume}>
         <Page pageNumber={1} width={size - 20}/>
