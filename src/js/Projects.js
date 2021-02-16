@@ -156,7 +156,7 @@ const Slot_4 = (props) => {
             <img src={Churn} className='Image3' alt='Churn Predictor Website' />
           </div>
           <div className='Right_sub_slot Column'>
-            <text className='Title Sub_Header'>Bank Churn Predictor</text>
+            <text className='Title Sub_Header'>FutureSpace</text>
             <text className='Text Header Component_text Paragraph_container'>
               Predicts likelihood of bank attrition. Uses multiple regression
               as machine learning model. Utilised React, Flask, Axios, Heroku and Firebase. 

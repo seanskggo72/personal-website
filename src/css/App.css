@@ -228,6 +228,9 @@
     flex-direction: column;
     background-color: #ffffff;
   }
+  .Paragraph_container {
+    width: 58vw;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
