@@ -46,7 +46,7 @@ const Slot_1 = (props) => {
               Mobile app created with React Native and Expo from scratch using
               functional components, hooks and Minimax algorithm.
             </text>
-            <div>
+            <div className='Paragraph_container'>
               <button className='Button Button_styling'
                 onClick={() => Redirector('https://play.google.com/store/apps/details?id=dev.quikk.tictactoeai')}>
                 GOOGLE PLAY
@@ -82,7 +82,7 @@ const Slot_2 = (props) => {
               Simple VScode syntax highlighter for Bule, a SAT programming language.
               Created with VS Code API and CLI tools.
             </text>
-            <div>
+            <div className='Paragraph_container'>
               <button className='Button Button_styling'
                 onClick={() => Redirector('https://marketplace.visualstudio.com/items?itemName=seanskggo.bule-syntax-highlighting')}>
                 MARKETPLACE
@@ -129,7 +129,7 @@ const Slot_3 = (props) => {
               Ongoing research on Bule and its efficiency of representing
               boolean expressions, factoring in time complexity and compactness.
             </text>
-            <div>
+            <div className='Paragraph_container'>
               <button className='Button Button_styling'
                 onClick={() => Redirector('https://github.com/AbdallahS/pspace-encodings')}>
                 GITHUB
@@ -162,7 +162,7 @@ const Slot_4 = (props) => {
               as machine learning model. Utilised React, Flask, Axios, Heroku and Firebase. 
               REST-based application.
             </text>
-            <div>
+            <div className='Paragraph_container'>
               <button className='Button Button_styling'
                 onClick={() => Redirector('https://futurespace-predict.web.app/')}>
                 WEBSITE
