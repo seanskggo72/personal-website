@@ -62,12 +62,12 @@ const Home = () => {
           onInit={(typewriter) => { typewriter.typeString(bio).start() }}
         />
         <div className='Div_margin'>
-          <Link to="/portfolio" tabindex="-1" className='Main_button'>
+          <Link to="/portfolio" tabIndex="-1" className='Main_button'>
             <button className='Main_button Button'>PORTFOLIO</button>
           </Link>
         </div>
         <div className='Div_margin'>
-          <Link to="/resume" tabindex="-1" className='Main_button'>
+          <Link to="/resume" tabIndex="-1" className='Main_button'>
             <button className='Main_button Button'>RESUME</button>
           </Link>
         </div>
