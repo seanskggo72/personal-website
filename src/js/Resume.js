@@ -26,7 +26,7 @@ const size = window.innerWidth > window.innerHeight ? window.innerHeight : windo
 const Resume_template = () => {
   pdfjs.GlobalWorkerOptions.workerSrc = worker;
   return (
-    <div className='FlexBox Main'>
+    <div className='FlexBox Main Main_delay'>
       <p className='Text Paragraph'>Last updated 15/02/2021</p>
       <p className='Text Info'>Please refresh if this resume does not fit your screen</p>
       <Document file={Resume}>

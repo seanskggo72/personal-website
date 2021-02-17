@@ -52,7 +52,7 @@ const Github = () => {
 
 const Home = () => {
   return (
-    <div className="FlexBox Main" style={{ backgroundImage: `url(${background})` }}>
+    <div className="FlexBox Main Main_delay" style={{ backgroundImage: `url(${background})` }}>
       <div className="FlexBox Main Sub_main">
         <img src={sean} className="Profile" alt="logo" />
         <p className='Title Name'>Sean Go</p>
