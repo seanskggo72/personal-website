@@ -59,7 +59,7 @@ const Home = () => {
         <Typewriter
           className='Typewriter'
           options={{ cursor: '_', delay: 65 }}
-          onInit={(typewriter) => { typewriter.pauseFor(2000).typeString(bio).start() }}
+          onInit={(typewriter) => { typewriter.pauseFor(1500).typeString(bio).start() }}
         />
         <div className='Div_margin'>
           <Link to="/portfolio" tabIndex="-1" className='Main_button'>
