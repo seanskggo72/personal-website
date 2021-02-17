@@ -131,7 +131,7 @@
 .Header {
   display: flex;
   font-size: calc(5px + 5.5vmin);
-  margin-bottom: 10px;
+  margin-bottom: 1vh;
 }
 
 .Header_without {
@@ -189,16 +189,15 @@
 }
 
 .Image {
-  height: 20vmax;
+  height: 30vmin;
 }
 
 .Image2 {
-  height: 20vmax;
-  margin-bottom: 2vmin;
+  height: 30vmin;
 }
 
 .Image3 {
-  height: 15vmax;
+  height: 22vmin;
 }
 
 .Component_text {
@@ -207,7 +206,7 @@
 }
 
 .Paragraph_container {
-  width: 50vw;
+  width: 40vw;
 }
 
 .Wide {
@@ -235,6 +234,22 @@
   }
   .Paragraph_container {
     width: 70vw;
+  }
+  .Image {
+    height: 35vmin;
+  }
+  
+  .Image2 {
+    height: 35vmin;
+  }
+  
+  .Image3 {
+    height: 25vmin;
+  }
+  .Sub_Header {
+    font-size: calc(5px + 4.5vmin);
+    margin-bottom: 10px;
+    width: 60vw;
   }
 }
 

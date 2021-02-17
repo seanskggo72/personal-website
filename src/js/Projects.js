@@ -85,7 +85,7 @@ const Slot_2 = (props) => {
             <div className='Paragraph_container'>
               <button className='Button Button_styling'
                 onClick={() => Redirector('https://marketplace.visualstudio.com/items?itemName=seanskggo.bule-syntax-highlighting')}>
-                MARKET
+                MARKETPLACE
               </button>
               <button className='Button Button_styling'
                 onClick={() => Redirector('https://github.com/seanskggo72/vscode-bule-syntax-highlighting')}>
