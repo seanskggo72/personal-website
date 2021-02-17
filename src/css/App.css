@@ -181,8 +181,8 @@
 }
 
 .Button_styling {
-  width: calc(60px + 10vmin);
-  height: calc(30px + 2vmin);
+  width: calc(45px + 12vmin);
+  height: calc(15px + 4vmin);
   font-size: calc(5px + 1vmin);
   margin-left: 1vmin;
   margin-right: 1vmin;
@@ -210,6 +210,10 @@
   width: 50vw;
 }
 
+.Wide {
+  width: 90vw;
+}
+
 /*////////////////////////////////////////////////////////////////////////////////
 // Notfound.js styles
 ////////////////////////////////////////////////////////////////////////////////*/
@@ -222,7 +226,7 @@
 // Animations and Media
 ////////////////////////////////////////////////////////////////////////////////*/
 
-@media only screen and (max-width: 550px) { 
+@media only screen and (max-aspect-ratio: 3/4) { 
   .Sub_slot {
     width: 90vw;
     height: 70vh;
@@ -230,7 +234,7 @@
     background-color: #ffffff;
   }
   .Paragraph_container {
-    width: 58vw;
+    width: 80vw;
   }
 }
 

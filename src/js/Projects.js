@@ -85,7 +85,7 @@ const Slot_2 = (props) => {
             <div className='Paragraph_container'>
               <button className='Button Button_styling'
                 onClick={() => Redirector('https://marketplace.visualstudio.com/items?itemName=seanskggo.bule-syntax-highlighting')}>
-                MARKETPLACE
+                MARKET
               </button>
               <button className='Button Button_styling'
                 onClick={() => Redirector('https://github.com/seanskggo72/vscode-bule-syntax-highlighting')}>
@@ -105,7 +105,7 @@ const Banner_1 = (props) => {
     <div ref={forwardedRef} className={Animation(props, 'Header')}>
       <div className='FlexBox Banner'>
         <div className='FlexBox Sub_banner'>
-          <h className='Title Header'>Research Contributions</h>
+          <h className='FlexBox Title Header Wide'>Research Contributions</h>
           <text className='Text Component_text'>The following highlights my
         research contributions at UNSW.</text>
         </div>
