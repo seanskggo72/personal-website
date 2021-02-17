@@ -234,7 +234,7 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .Main {animation: FadeIn 1s;}
+  .Main {animation: FadeIn 2s;}
   .Button:hover {animation: HoverEffect 0.5s forwards;}
   .Header {animation: SlideIn 1.5s;}
   .Component_text {animation: SlideInDelay 3s;}
@@ -242,6 +242,7 @@
 
 @keyframes FadeIn {
   from {opacity: 0;}   
+  50% {opacity: 0;}   
   to {opacity: 1;}
 }
 
