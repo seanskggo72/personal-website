@@ -15,7 +15,7 @@ import {
   Link
 } from "react-router-dom";
 import sean from '../svg/sean.png';
-import background from '../svg/wallpaper.svg'
+import background from '../svg/wallpaper.png'
 import Typewriter from 'typewriter-effect';
 import Resume from './Resume';
 import Projects from './Projects';
@@ -52,14 +52,14 @@ const Github = () => {
 
 const Home = () => {
   return (
-    <div className="FlexBox Main" style={{ backgroundImage: `url(${background})` }}>
+    <div className="FlexBox Main Main_delay" style={{ backgroundImage: `url(${background})` }}>
       <div className="FlexBox Main Sub_main">
         <img src={sean} className="Profile" alt="logo" />
         <p className='Title Name'>Sean Go</p>
         <Typewriter
           className='Typewriter'
           options={{ cursor: '_', delay: 65 }}
-          onInit={(typewriter) => { typewriter.typeString(bio).start() }}
+          onInit={(typewriter) => { typewriter.pauseFor(2000).typeString(bio).start() }}
         />
         <div className='Div_margin'>
           <Link to="/portfolio" tabIndex="-1" className='Main_button'>
