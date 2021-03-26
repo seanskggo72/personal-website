@@ -46,7 +46,7 @@ const Slot_1 = (props) => {
               Mobile app created with React Native and Expo from scratch using
               functional components, hooks and Minimax algorithm.
             </text>
-            <div>
+            <div className='Paragraph_container'>
               <button className='Button Button_styling'
                 onClick={() => Redirector('https://play.google.com/store/apps/details?id=dev.quikk.tictactoeai')}>
                 GOOGLE PLAY
@@ -82,7 +82,7 @@ const Slot_2 = (props) => {
               Simple VScode syntax highlighter for Bule, a SAT programming language.
               Created with VS Code API and CLI tools.
             </text>
-            <div>
+            <div className='Paragraph_container'>
               <button className='Button Button_styling'
                 onClick={() => Redirector('https://marketplace.visualstudio.com/items?itemName=seanskggo.bule-syntax-highlighting')}>
                 MARKETPLACE
@@ -105,7 +105,7 @@ const Banner_1 = (props) => {
     <div ref={forwardedRef} className={Animation(props, 'Header')}>
       <div className='FlexBox Banner'>
         <div className='FlexBox Sub_banner'>
-          <h className='Title Header'>Research Contributions</h>
+          <h className='FlexBox Title Header Wide'>Research Contributions</h>
           <text className='Text Component_text'>The following highlights my
         research contributions at UNSW.</text>
         </div>
@@ -129,7 +129,7 @@ const Slot_3 = (props) => {
               Ongoing research on Bule and its efficiency of representing
               boolean expressions, factoring in time complexity and compactness.
             </text>
-            <div>
+            <div className='Paragraph_container'>
               <button className='Button Button_styling'
                 onClick={() => Redirector('https://github.com/AbdallahS/pspace-encodings')}>
                 GITHUB
@@ -162,7 +162,7 @@ const Slot_4 = (props) => {
               as machine learning model. Utilised React, Flask, Axios, Heroku and Firebase. 
               REST-based application.
             </text>
-            <div>
+            <div className='Paragraph_container'>
               <button className='Button Button_styling'
                 onClick={() => Redirector('https://futurespace-predict.web.app/')}>
                 WEBSITE

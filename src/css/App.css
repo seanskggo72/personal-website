@@ -76,6 +76,7 @@
 }
 
 .Profile {
+  min-width: 150px;
   width: 70vmin;
 }
 
@@ -131,7 +132,7 @@
 .Header {
   display: flex;
   font-size: calc(5px + 5.5vmin);
-  margin-bottom: 10px;
+  margin-bottom: 1vh;
 }
 
 .Header_without {
@@ -181,32 +182,36 @@
 }
 
 .Button_styling {
-  width: calc(60px + 10vmin);
-  height: calc(30px + 2vmin);
+  width: calc(45px + 12vmin);
+  height: calc(15px + 4vmin);
   font-size: calc(5px + 1vmin);
   margin-left: 1vmin;
   margin-right: 1vmin;
 }
 
 .Image {
-  height: 20vmax;
+  height: 30vmin;
 }
 
 .Image2 {
-  height: 20vmax;
-  margin-bottom: 2vmin;
+  height: 30vmin;
 }
 
 .Image3 {
-  height: 15vmax;
+  height: 22vmin;
 }
 
 .Component_text {
   font-size: calc(5px + 2vmin);
+  width: 80vw;
 }
 
 .Paragraph_container {
   width: 40vw;
+}
+
+.Wide {
+  width: 90vw;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////
@@ -221,7 +226,7 @@
 // Animations and Media
 ////////////////////////////////////////////////////////////////////////////////*/
 
-@media only screen and (max-width: 550px) { 
+@media only screen and (max-aspect-ratio: 3/4) { 
   .Sub_slot {
     width: 90vw;
     height: 70vh;
@@ -229,7 +234,23 @@
     background-color: #ffffff;
   }
   .Paragraph_container {
-    width: 58vw;
+    width: 65vw;
+  }
+  .Image {
+    height: 35vmin;
+  }
+  
+  .Image2 {
+    height: 35vmin;
+  }
+  
+  .Image3 {
+    height: 30vmin;
+  }
+  .Sub_Header {
+    font-size: calc(5px + 4.5vmin);
+    margin-bottom: 10px;
+    width: 60vw;
   }
 }
 
