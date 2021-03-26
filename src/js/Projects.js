@@ -124,7 +124,7 @@ const Slot_3 = (props) => {
             <img src={Bule} className='Image3' alt='Reserach contribution' />
           </div>
           <div className='Right_sub_slot Column'>
-            <text className='Title Sub_Header'>Efficacy of Bule as a SAT language</text>
+            <text className='Title Sub_Header'>Bule as a SAT language</text>
             <text className='Text Header Component_text Paragraph_container'>
               Ongoing research on Bule and its efficiency of representing
               boolean expressions, factoring in time complexity and compactness.
