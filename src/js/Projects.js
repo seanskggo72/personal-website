@@ -15,6 +15,7 @@ import TicTacToe from '../assets/TicTacToe.png';
 import Vscode from '../assets/vscode.png';
 import Bule from '../assets/bule.png';
 import Churn from '../assets/churn.png';
+import Contacts from '../assets/contacts.png'
 
 /////////////////////////////////////////////////////////////////////////////////
 // Functions
@@ -105,9 +106,9 @@ const Banner_1 = (props) => {
     <div ref={forwardedRef} className={Animation(props, 'Header')}>
       <div className='FlexBox Banner'>
         <div className='FlexBox Sub_banner'>
-          <h className='FlexBox Title Header Wide'>Research Contributions</h>
+          <h className='FlexBox Title Header Wide'>Research</h>
           <text className='Text Component_text'>The following highlights my
-        research contributions at UNSW.</text>
+        research studies at UNSW.</text>
         </div>
       </div>
     </div>
@@ -127,7 +128,7 @@ const Slot_3 = (props) => {
             <text className='Title Sub_Header'>A Strategy-game Approach to Solving Logic
             Formulas</text>
             <text className='Text Header Component_text Paragraph_container'>
-              Ongoing research on Bule and its efficiency of representing
+              Study of Bule and its efficiency of representing
               boolean expressions, factoring in time complexity and compactness.
             </text>
             <div className='Paragraph_container'>
@@ -180,6 +181,37 @@ const Slot_4 = (props) => {
   );
 };
 
+const Slot_5 = (props) => {
+  const { forwardedRef } = props;
+  return (
+    <div ref={forwardedRef} className={Animation(props, 'Header')}>
+      <div className='FlexBox Main_slot'>
+        <div className='FlexBox Sub_slot'>
+          <div className='Left_sub_slot'>
+            <img src={Contacts} className='Image3' alt='Contacts App' />
+          </div>
+          <div className='Right_sub_slot Column'>
+            <text className='Title Sub_Header'>CRUD Contacts App</text>
+            <text className='Text Header Component_text Paragraph_container'>
+              Basic CRUD contacts application. Created with React and React-bootstrap components.
+            </text>
+            <div className='Paragraph_container'>
+              <button className='Button Button_styling'
+                onClick={() => Redirector('https://contacts-simple.web.app/')}>
+                WEBSITE
+              </button>
+              <button className='Button Button_styling'
+                onClick={() => Redirector('https://github.com/seanskggo72/Contacts-App')}>
+                GITHUB
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 /////////////////////////////////////////////////////////////////////////////////
 // Constants
 /////////////////////////////////////////////////////////////////////////////////
@@ -190,6 +222,7 @@ const Slot2 = handleViewport(Slot_2);
 const Banner = handleViewport(Banner_1);
 const Slot3 = handleViewport(Slot_3);
 const Slot4 = handleViewport(Slot_4);
+const Slot5 = handleViewport(Slot_5);
 
 /////////////////////////////////////////////////////////////////////////////////
 // Exports
@@ -209,6 +242,7 @@ const Project_template = () => {
       <Slot2 />
       <Slot4 />
       <Slot1 />
+      <Slot5 />
       <Banner />
       <Slot3 />
     </div>
